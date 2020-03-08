@@ -1,0 +1,83 @@
+.header {
+    height: 100%;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    margin: 0 auto;
+    text-align: center;
+    margin-top: 0px;
+    padding-top: 100px;
+    margin: 0 auto;
+    background: white;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1600 900'%3E%3Cpolygon fill='%232db15e' points='957 450 539 900 1396 900'/%3E%3Cpolygon fill='%2317592f' points='957 450 872.9 900 1396 900'/%3E%3Cpolygon fill='%23289f54' points='-60 900 398 662 816 900'/%3E%3Cpolygon fill='%23174727' points='337 900 398 662 816 900'/%3E%3Cpolygon fill='%23248d4b' points='1203 546 1552 900 876 900'/%3E%3Cpolygon fill='%2315361f' points='1203 546 1552 900 1162 900'/%3E%3Cpolygon fill='%231f7b41' points='641 695 886 900 367 900'/%3E%3Cpolygon fill='%23122617' points='587 900 641 695 886 900'/%3E%3Cpolygon fill='%231b6a38' points='1710 900 1401 632 1096 900'/%3E%3Cpolygon fill='%230c170e' points='1710 900 1401 632 1365 900'/%3E%3Cpolygon fill='%2317592f' points='1210 900 971 687 725 900'/%3E%3Cpolygon fill='%23000000' points='943 900 1210 900 971 687'/%3E%3C/svg%3E");
+    background-size: cover;
+    
+    /* background by SVGBackgrounds.com */
+    @media (min-width: $screen-md) {
+        height: 100vh;
+        padding-top: 50px;
+    }
+
+    @media (min-width: $screen-lg) {}
+}
+
+.contentHeader {
+    z-index: 4;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.floatPanda {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 400px;
+    height: 400px;
+}
+
+.panda {
+    max-width: 70%;
+    margin-bottom: -100px;
+    filter: brightness(120%);
+
+    @media (min-width: $screen-md) {
+
+        max-width: 90%;
+        padding-bottom: 00px;
+    }
+    animation-duration: 2s;
+    animation-name: jump;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes jump {
+    0% {
+        transform: translateY(0px);
+        transform: skewX(30px);
+    }
+
+    50% {
+        transform: translateY(30px);
+    }
+
+    100% {
+
+        transform: translateY(0px);
+    }
+}
+
+.stationObject {
+    position: absolute;
+    bottom: 15%;
+    left: 20px;
+    cursor: pointer;
+    z-index: 999;
+
+    @media (min-width: $screen-md) {
+        top: 15%;
+        left: 30px;
+    }
+}

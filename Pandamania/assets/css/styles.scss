@@ -1,0 +1,33 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+/* _settings.scss */
+/* 
+    @author: Robwert Mota
+    @website: http://arentus.github.io
+*/
+/* COLOR SCHEME --- PandaMani TM*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+@import url("https://fonts.googleapis.com/css?family=Quicksand:400,500,700");
+body {
+  font-family: "Quicksand";
+}
+
+.bambooNav {
+  background: orange;
+  width: 100%;
+  height: 65px;
+  position: fixed;
+  line-height: 65px;
+  text-align: center;
+}
+.bambooNav .logo {
+  float: left;
+  width: auto;
+  height: auto;
+  padding-left: 3rem;
+}
+
+body {
+  background: whitesmoke;
+}
+
+/*# sourceMappingURL=styles.scss.map */

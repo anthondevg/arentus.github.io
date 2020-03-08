@@ -1,0 +1,163 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Ubuntu&display=swap" rel="stylesheet">
+
+    <title>Hello mockup | Mobile only</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- top navbar should be here -->
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <h3 id="title-section" class="title-section">Selecteaza Salonul</h3>
+                <div class="d-flex justify-content-center align-items-center activate-box">
+                    <button style="display: none" id="activate-button" class="activate-btn" onclick="geoFindme()">ACTIVEAZA LOCATIA!</button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <!-- addresses goes here -->
+    <div class="container-fluid address-section" id="addresses-wrapper">
+
+        <!-- ADDRESS ROW -->
+        <div style="display: none;" class="row place" data-type="template">
+
+            <div class="col-7 address-wrapper">
+                <button data-toggle="modal" data-target="#exampleModalCenter2" class="title address-box">
+                    <p>Dristor</p>
+                </button>
+            </div>
+
+            <div class="col-5">
+                <div class="row distance-detail">
+
+                    <!-- walker icon -->
+                    <div class="col-6 walker-wrapper" style="opacity: 0;">
+
+                        <div>
+                            <img class="img-fluid walker-icon" src="walker.png" alt="walker" />
+                        </div>
+                        <div>
+                            ...
+                        </div>
+
+                    </div>
+
+                    <!-- distance -->
+                    <div class="col-6">
+                        <p class="distance">? km</p>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModalCenter2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                        <div class="modal-body">
+                            <div class="modal-title">
+                                <p class="address-title">MAGIC SALON DRISTOR</p>
+                            </div>
+
+                            <div class="modal-place">
+                                <img class="img-fluid" src="pin.png" alt="">
+                                <p class="modal-desc">Bldvd. Camil Ressu, nr. 8</p>
+                            </div>
+
+                            <div class="schedule-box">
+                                <b>Program: </b><span class="schedule">L-D, 10:00-22:00</span>
+                            </div>
+
+                            <div class="d-flex">
+                                <a class="gmail-map-link" href="#">
+                                    <img class="img-fluid" src="map_button.png" alt="">
+                                </a>
+
+                                <a class="gmail-phone-link" href="#">
+                                    <img class="img-fluid" src="phone_button.png" alt="">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <!-- info button and btn --->
+    <div class="container-fluid pt-1">
+        <div class="row buttons-footer">
+            <div class="col-6">
+                <a href="#" data-toggle="modal" data-target="#exampleModalCenter">
+                    <img width="50px" height="50px" class="img-fluid" src="info_button.png" alt="">
+                </a>
+            </div>
+            <div class="col-6">
+                <button class="btn-departe">MAI DEPARTE</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal information -->
+    <div class="modal fade" id="exampleModalCenter" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+                    <div class="modal-title">
+                        <img width="50px" height="50px" class="img-fluid" src="info_button.png" alt="">
+                        Informatii:
+                    </div>
+
+                    <p class="modal-desc">
+                        Saloanele sunt afisate in ordinea proximitatii locatiei tale, In partea din dreapta vei gasi distanta exacta dintre locul in care te afli si Salonul dorit.
+                    </p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal activate geolocation -->
+    <div class="modal fade" id="geolocationModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document">
+            <div class="modal-content">
+                <div class="modal-body">
+
+                    <p class="modal-desc">
+                        Este necesar sa iti activezi locatia pentru a vedea cele mai apropiate Salonae de zona ta.
+                    </p>
+
+                    <button id="activate-button" class="activate-btn" onclick="geoFindme()">ACTIVEAZA LOCATIA!</button>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="script.js"></script>
+
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCbEiqyzy0vxz3oNsxeyrq54k_J_wB-rk4&callback=initMap"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,36 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+    /* _settings.scss */
+    /* 
+        @author: Robwert Mota
+        @website: http://arentus.github.io
+    */
+
+    // File to set color scheme, breakpoints, font-sizes, font-family, etc. */
+
+    /* COLOR SCHEME --- PandaMani TM*/
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+
+//*~ Variables for color Scheme
+
+$bambooDarkest: #041209;
+
+$bambooStem: #81d09e;
+
+$bambooLeaf: #377C07;
+$bambooMain: #2db15e;
+$bambooLigth: #248e4b;
+$bambooDark: #17592f;
+
+$graspOrange: rgb(255,148,0);
+
+$grey: #E2E2E2;
+
+//*~ Breakpoints min-widths
+
+$screen-jumbo:               1600px;
+$screen-xl:                  1400px;
+$screen-lg:                  1200px;
+$screen-md:                  992px;
+$screen-sm:                  768px;
+$screen-xs:                  480px;
+

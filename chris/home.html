@@ -1,0 +1,281 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/output.css">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/nav.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
+
+    <title>Home</title>
+</head>
+
+<body>
+
+    <nav id="mySidenav" class="sidenav" style="z-index: 99">
+
+        <div class="nav-control pt-5">
+            <div class="nav-desc" style="align-items: baseline;">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/popular_topics_icon.svg" alt="Popular Topics Icon"></span>
+            </div>
+
+            <p class="nav-title">Popular Topics</p>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="learning_centre_assets/popular_topics_close.svg" alt=""></a>
+        </div>
+
+        <ul class="pt-3">
+            <li><a href="content.html">Search Engine Optimization</a></li>
+            <li><a href="">i:Create content and Page Management</a></li>
+            <li><a href="">Accessibility Compliance(AODA)</a></li>
+            <li><a href="">Guide to Writing for the Web</a></li>
+            <li><a href="">Lorem ipsum dolor</a></li>
+
+            <li><a href="">Consetetur Sadipscing</a></li>
+
+            <li><a href="">At: Vero Eos et Accusam</a></li>
+        </ul>
+    </nav>
+    <header class="container-fluid main-header overlay">
+
+        <div class="row">
+
+            <div class="col-md-4 col-sm-6">
+                <img class="img-fluid pb-3" src="learning_centre_assets/logo.svg" alt="eSolutionsGroup Centre Logo.">
+            </div>
+
+
+            <!--<form method="" class="col-12 my-3 header-input has-search">
+
+                <div class="d-flex wrapper-i-search">
+                    <label for="search-bar" class="hidden">Search input</label>
+
+                    <span class="fa fa-search form-control-feedback"></span>
+
+                    <input aria-label="Search input" id="search-bar" type="text" class="form-control search-bar">
+
+                    <button aria-label="Search button" class="form-control search-button orange">Search</button>
+                </div>
+                <button accesskey="m" aria-describedby="descriptionPopularTopicsMenu" class="btn popular-topics-button-home" id="btn-nav">Popular Topics</button>
+
+            </form>-->
+
+
+
+            <div class="col-12 my-3 header-input searchBox">
+
+                <div class="d-flex wrapper-i-search">
+                    <label for="search-bar" class="hidden">Search input</label>
+
+                    <input type="search" name="search" class="form-control search-bar searchInput" placeholder="What are you looking for?" aria-label="What are you looking for?" title="Enter search keywords" autocomplete="off">
+
+                    <button aria-label="Search button" class="form-control search-button orange">Search</button>
+
+                </div>
+
+                <button accesskey="m" aria-describedby="descriptionPopularTopicsMenu" class="btn popular-topics-button-home" id="btn-nav" onclick="openNav()">Popular Topics</button>
+            </div>
+
+
+
+
+
+            <p class="brand-msg" id="typed"></p>
+
+        </div>
+
+        <div class="scroll-down"></div>
+        
+        <div class="header-news">
+            <p><strong>What's New:</strong> Collect digital Signatures in Form Builder with <span>Notarius Consign0</span></p>
+        </div>
+
+    </header>
+    <!-- hidden title for SEO -->
+    <h1 class="hidden">eSolutionsGroup Learning Centre</h1>
+
+    <div class="welcome-section pt-5">
+
+        <h2 class="welcome-title">Welcome to the eSolutionsGroup Learning Centre</h2>
+        <p>Editable text area. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas voluptates eum quos, accusamus, consequatur architecto sunt impedit aperiam vero voluptate iure magni tenetur velit. Praesentium nemo, at dolor id iure.</p>
+    </div>
+
+    <div class="container-fluid features-wrapper">
+        <div class="row">
+            <div aria-labelledby="description" class="col-md-6 col-lg-4  grid-element">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/icreate_icon.svg" alt="i:Create content and Page Management"></span>
+                <h2><a href="#">i:Create content and Page Management</a></h2>
+                <p id="description">Accesible Content, Add or Edit a Page, Back-end(Workbench),Embed Media, Maps or Other Items, File Manager, Hyperlinks, Images, Publish or Unpublish a Page, Tables</p>
+            </div>
+            <div class="col-md-6 col-lg-4 grid-element">
+
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/applications_icon.svg" alt="Applications and Add-ons"></span>
+                <h2><a href="#">Applications and Add-ons</a></h2>
+                <p>Parks and Facilities, Bylaws, Business Directory, Document Manager, Snow Removal, City Services (3D maps)</p>
+            </div>
+            <div class="col-md-6 col-lg-4 grid-element">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/formbuilder_icon.svg" alt="Form Builder"></span>
+                <h2><a href="#">Form Builder</a></h2>
+                <p>Create and Edit Forms, Ecommerce, Folders and Organization, Launch or Decommission a Form, Question types, Reports, Responses, Security, and Permissions, Workflows</p>
+            </div>
+
+            <div class="grid-element col-md-6 col-lg-4 ">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/calendar_icon.svg" alt="Calendar (Public facing)"></span>
+                <h2><a href="">Calendar (Public facing)</a></h2>
+                <p>Add or Edit an Event, Approvals, Cancel an Event, Event List, Event Registration, What can I do with i:Calendar?</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/content_icon.svg" alt="Content writing and SEO"></span>
+                <h2><a href="content.html">Content writing and SEO</a></h2>
+                <p>Accordion Foldout, Best Practices, Editing Checklist, Readability Statistics, Search Engine Optimization (SEO), Writing Services</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/bt_icon.svg" alt="bids"></span>
+                <!-- If target="_blank" attr is enabled will include the external link icon -->
+                <h2><a href="" target="_blank">bids&tenders</a></h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eum perferend</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/menumanager_icon.svg" alt="Menu Manager"></span>
+                <h2><a href="">Menu Manager</a></h2>
+                <p>Add, Edit and Delete Menu Items, Menu images, Preview and Publish</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/accesibility_icon.svg" alt="Accessibility"></span>
+                <h2><a href="#">Accessibility</a></h2>
+                <p>Accessibility checker, Accessibility legislation and guidelines, Accesible content, Accessible document services, Alt text and images, Headings, Hyperlinks, Table of contents, Tables</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/police_icon.svg" alt="Police Services"></span>
+                <h2><a href="">Police Services</a></h2>
+                <p>ePIC Personal Identification Check, Fingerprint Scheduler, Paid Duty</p>
+            </div>
+
+
+            <div class="grid-element col-md-6 col-lg-4">
+
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/news_icon.svg" alt="News Manager"></span>
+                <h2><a href="">News Manager</a></h2>
+                <p>Activity History, Add Alert Banner, Add News Feed, Add, Edit or Delete a News Item, Approvals, Permissions</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/googleanalytics_icon.svg" alt="Google Analytics"></span>
+                <h2><a href="">Google Analytics</a></h2>
+                <p>Glossary of Terms, Google Analytics Services, Understanding My Analytics</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/recruit_icon.svg" alt="Recruit Right"></span>
+                <h2><a href="">Recruit Right</a></h2>
+                <p>Add jobs, Applicant Profiles, Manage Applications, Screening Questions, Settings and Customization, Users and Security</p>
+            </div>
+
+            <div class="grid-element col-md-6 col-lg-4 nb-bottom">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/users_icon.svg" alt="Users and Permissions"></span>
+                <h2><a href="">Users and Permissions</a></h2>
+                <p>Additional Module Permissions, i:Create Permissions, Workflow and Approvals</p>
+            </div>
+            <div class="grid-element col-md-6 col-lg-4 nb-bottom">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/pingstreet_icon.svg" alt="Pingstreet"></span>
+                <h2><a href="">Pingstreet</a></h2>
+                <p>Add Users, Banner, Broadcast, Dashboard and Analytics, Data Change Request, Notifications, Pingstreet Portal Overview, Report a Problem, Tiles</p>
+            </div>
+        </div>
+    </div>
+
+    <section class="container-fluid help-section">
+        <div class="row">
+            <div class="col-12 d-flex justify-content-center help-div">
+                <h2 class="title">Need Help?</h2>
+                <p class="sub-text">Get in touch with us.</p>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center text-center contact-info">
+            <div class="col-sm-6 col-lg-4">
+                <span class="icon"><img src="learning_centre_assets/contact_icon1.svg" alt=""></span>
+                <a href="">Contact Us Online</a>
+            </div>
+            <div class="col-sm-6 col-lg-4">
+                <span class="icon"><img src="learning_centre_assets/contact_icon2.svg" alt=""></span>
+                1-800-265-6102
+            </div>
+            <div class="col-sm-8 col-lg-4">
+                <span class="icon"><img src="learning_centre_assets/contact_icon3.svg" alt=""></span>
+                <a href="">Common Questions</a>
+            </div>
+        </div>
+    </section>
+
+    <footer class="container-fluid footer">
+
+        <div class="mr-5 ml-5">
+            <div class="row footer-wrapper pt-4 pb-2">
+                <div class="col-md-3 col-sm-3">
+                    <img class="img-fluid" src="learning_centre_assets/footer_logo.svg" alt="">
+                </div>
+                <div class="col-md-7 col-sm-6">
+                    <ul class="footer-links">
+                        <li class="link"><a href="#">Accessibility</a></li>
+                        <li class="link"><a href="#">Support</a></li>
+                        <li class="link"><a href="#">Privacy</a></li>
+                        <li class="link"><a href="#">i:Create Permissions</a></li>
+                        <li class="link"><a href="#">Form Builder</a></li>
+                    </ul>
+                </div>
+                <div class="col-md-2 col-sm-3">
+                    <ul class="social-icons">
+                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
+                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
+                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
+                    </ul>
+                </div>
+
+            </div>
+
+            <div class="col-12 pt-3 pb-3 d-flex flex-row-reverse">
+                <p class="footer-msg" style="color: darkgrey">Designed by eSolutionsGroup and Developed by <a href="https://arentus.github.io" Target="_blank">Robwert Mota</a> </p>
+            </div>
+        </div>
+    </footer>
+
+    <div class="blackout closed">
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+
+    <script src="https://kit.fontawesome.com/de1c643c83.js" crossorigin="anonymous"></script>
+
+    <script>
+        var typed = new Typed('#typed', {
+            strings: ['We work for you and your audiences.'],
+            typeSpeed: 40,
+            backSpeed: 10,
+            fadeOut: true,
+            loop: false
+        });
+
+        var typed2 = new Typed('#search-bar', {
+            strings: ['HTML5 Courses', 'Photoshop CS6', 'Learn new Things', 'What are you looking for?'],
+            typeSpeed: 70,
+            backSpeed: 10,
+            attr: 'placeholder',
+            bindInputFocusEvents: true,
+            loop: false
+        });
+    </script>
+
+    <script src="js/script.js"></script>
+</body></html>
