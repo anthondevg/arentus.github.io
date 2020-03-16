@@ -1,0 +1,40 @@
+
+.infoSection {
+
+    .circleLogo {
+        font-size: 3rem;
+        padding: 5px;
+        margin-right: 10px;
+        background-color: #0D3292;
+        border-radius: 50%;
+        min-width: 80px;
+        text-align: center;
+    }
+
+    .infoBox{
+        margin-bottom: 50px;
+        
+        @media (min-width: $screen-sm) {
+            margin-bottom: 0px;
+        }
+    }
+
+    .outlinedCircle {
+        background-color: transparent;
+        border: 2px solid #0D3292;
+
+        i {
+            color: white;
+        }
+    }
+
+    .coverLetter {
+        font-weight: 600 !important;
+    }
+}
+
+.numberInfo {
+    font-size: 2rem;
+    text-align: left;
+    font-weight: bold !important;
+}

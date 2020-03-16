@@ -1,0 +1,398 @@
+/** styles for navbar */
+$heightNav: 80px;
+$linksColor: white;
+$hamburguer-icon-color: white;
+$navBackground-color: #040404;
+
+.nav {
+    width: 100%;
+    height: $heightNav;
+    position: fixed;
+    line-height: $heightNav;
+    text-align: center;
+    display: block;
+    margin: 0;
+    padding: 0;
+    .logo {
+        float: left;
+        width: auto;
+        height: auto;
+
+        a {
+            text-decoration: none;
+            color: $linksColor;
+            font-size: 2rem;
+            font-weight: 700;
+            letter-spacing: 2px;
+            color: white;
+        }
+
+        a:hover {
+            color: whitesmoke;
+        }
+
+    }
+
+    .main_list {
+        float: right;
+    }
+
+    .main_list ul {
+        width: 100%;
+        height: $heightNav;
+        display: flex;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .main_list ul li {
+        width: auto;
+        height: $heightNav;
+        padding: 0;
+        padding-right: 1rem;
+    }
+
+    .main_list ul li a {
+        text-decoration: none;
+        color: $linksColor;
+        padding: 10px;
+        line-height: $heightNav;
+        font-size: 1.3rem;
+        transition: .5s ease;
+    }
+
+}
+
+.nav {
+    -webkit-transition: all 0.4s ease;
+    transition: all 0.4s ease;
+}
+
+.affix {
+    background-color: white;
+    padding: 0;
+
+    
+    .logo {
+        float: left;
+        width: auto;
+        height: auto;
+
+        a {
+            text-decoration: none;
+            font-size: 2rem;
+        }
+
+        a:hover {
+            color: black;
+        }
+
+    }
+
+    .navTrigger i {
+        background-color: black;
+    }
+}
+
+.navTrigger {
+    display: none;
+    transition: .5s ease;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+
+    .main_list ul li a:hover {
+        /* background: rgba(22,33,22,0.3);
+        border-radius: 100rem;*/
+        border-radius: 0;
+        border-bottom: 1px solid black;
+    }
+}
+
+@media screen and (max-width:2768px) {
+    .navTrigger {
+        display: block;
+    }
+
+    .nav div.logo {
+        margin-left: 0px;
+    }
+    
+    .nav div.main_list {
+        width: 100%;
+        height: 0;
+        overflow: hidden;
+        z-index: 999;
+        transition: .5s;
+    }
+
+    .show_list {
+        height: 100vh !important;
+        width: 100vw;
+    }
+
+    .nav div.main_list ul {
+        flex-direction: column;
+        width: 100%;
+        height: 100vh;
+        justify-content: center;
+        left: 0;
+        bottom: 0;
+        background-color: $navBackground-color;
+        /*same background color of navbar*/
+        background-position: center top;
+    }
+
+    .nav div.main_list ul li {
+        width: 100%;
+        text-align: center;
+        transition: .4s ease;
+    }
+
+    .nav div.main_list ul li a {
+        text-align: center;
+        width: 100%;
+        font-size: 5vw;
+        color: white;
+        margin-bottom: 30px;
+    }
+
+    .nav div.main_list ul li a:hover {
+        text-align: center;
+        width: 100%;
+        background: white;
+        color: black;
+    }
+
+    .nav div.media_button {
+        display: block;
+    }
+}
+
+
+/* Animation */
+/* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
+
+.navTrigger {
+    cursor: pointer;
+    width: 40px;
+    height: 25px;
+    margin: auto;
+    position: absolute;
+    right: 40px;
+    top: 0px;
+    bottom: 0;
+    transform: rotate(180deg);
+}
+
+.navTrigger:hover {
+    i{
+        width: 120%;
+    }
+}
+.navTrigger i {
+    background-color: $hamburguer-icon-color;
+    border-radius: 15px;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    transition: .8s;
+}
+
+.navTrigger i:nth-child(1) {
+    width: 80%;
+    -webkit-animation: outT 0.8s backwards;
+    animation: outT 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(2) {
+    margin: 7px 0;
+    width: 80%;
+    -webkit-animation: outM 0.8s backwards;
+    animation: outM 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger i:nth-child(3) {
+    width: 100%;
+    -webkit-animation: outBtm 0.8s backwards;
+    animation: outBtm 0.8s backwards;
+    -webkit-animation-direction: reverse;
+    animation-direction: reverse;
+}
+
+.navTrigger.active i:nth-child(1) {
+    width: 100%;
+    -webkit-animation: inT 0.8s forwards;
+    animation: inT 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(2) {
+    width: 100%;
+    -webkit-animation: inM 0.8s forwards;
+    animation: inM 0.8s forwards;
+}
+
+.navTrigger.active i:nth-child(3) {
+    width: 100%;
+    -webkit-animation: inBtm 0.8s forwards;
+    animation: inBtm 0.8s forwards;
+}
+
+
+@-webkit-keyframes inM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes inM {
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes outM {
+    50% {
+        -webkit-transform: rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: rotate(45deg);
+    }
+}
+
+@keyframes outM {
+    50% {
+        transform: rotate(0deg);
+    }
+
+    100% {
+        transform: rotate(45deg);
+    }
+}
+
+@-webkit-keyframes inT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes inT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outT {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@keyframes outT {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes inBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes inBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@-webkit-keyframes outBtm {
+    0% {
+        -webkit-transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        -webkit-transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        -webkit-transform: translateY(-9px) rotate(135deg);
+    }
+}
+
+@keyframes outBtm {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+
+    50% {
+        transform: translateY(-9px) rotate(0deg);
+    }
+
+    100% {
+        transform: translateY(-9px) rotate(135deg);
+    }
+}

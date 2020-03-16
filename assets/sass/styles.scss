@@ -1,0 +1,13 @@
+@import 'base.scss';
+@import 'settings.scss';
+
+@import 'header.scss';
+@import 'nav.scss';
+
+@import 'infoSection.scss';
+
+body{
+    background: #040404;
+    color: white;
+    font-family: $default-font;
+}

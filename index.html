@@ -2,125 +2,152 @@
 <html lang="en">
 
 <head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
-    <link rel="stylesheet" href="assets/css/portafolio.css">
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:100,900&display=swap" rel="stylesheet">
 
-    <link href="https://fonts.googleapis.com/css?family=Bree+Serif|Muli|PT+Serif:700|Quicksand" rel="stylesheet">
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Font Awesome -->
+  <script src="https://kit.fontawesome.com/de1c643c83.js" crossorigin="anonymous"></script>
 
-    <title>My portfolio - Mota Robwert</title>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <title>Robwert Mota</title>
 </head>
 
 <body>
-    <header class="wrapperHeader container-fluid d-flex justify-content-center align-items-center">
-        <div class="row">
-           <div class="col-md-4 d-flex justify-content-center align-items-center">
-                <img class="img-fluid" style="border-radius: 50%; width: 200px; height: 200px;" src="edited.jpg" alt="">
 
-            </div>
-            <div class="col-md-8 d-flex justify-content-center align-items-center" style="flex-direction: column">
-                <h1 class="titleHeader">Hi! I'm Robwert Mota.</h1>
-                <h4>Welcome to my portfolio.</h4>
-                <p style="padding: 50px;">
-                  
-                   <b>Web Development is Love.</b>
-                   <b> Web Development is Art.</b>
-
-                    I am a passionate FullStack Developer with +4 years who is keen on developing robust and high-quality functional websites and web applications. My favorite frameworks are Laravel, React.js and Vue.js.</p>
-                <a href="#work" class="btn btn-light darkBlue">My Work</a>
-                <div class="social-group-btn">
-                </div>
-            </div>
-            
+  <header id="home" class="container-fluid h-wrapper">
+    <nav class="nav fixed-top">
+      <div class="">
+        <div class="logo pl-4">
         </div>
-    </header>
-    <section class="container-fluid d-flex justify-content-center align-items-center p-2 mb-3">
-        <div class="row">
-            <div class="col-md-12 ">
-
-                <a href="https://www.linkedin.com/in/robwertmt/" class="fa fa-social"><i class="fab fa-linkedin-in"></i></a>
-
-                <a href="https://github.com/Arentus/" class="fa fa-social"><i class="fab fa-github"></i></a>
-
-                <a href="https://gitlab.com/Arentus" class="fa fa-social"><i class="fab fa-gitlab"></i></a>
-
-                <a href="https://twitter.com/Arentusx" class="fa fa-social"><i class="fab fa-twitter"></i></a>
-            </div>
+        <div id="mainListDiv" class="main_list">
+          <ul class="navlinks">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#work">Work</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#">Say Hello!</a></li>
+          </ul>
         </div>
-    </section>
+        <span class="navTrigger hoverable">
+          <i></i>
+          <i></i>
+          <i></i>
+        </span>
+      </div>
+    </nav>
 
-    <section id="work" class="container p-5 mt-5 mb-5">
-        <h1 class="text-center mb-5">My Work</h1>
-        <div class="row">
+    <div class="row h-row">
+      <div class="col-md-12 h-titles text-center p-5">
+        <h1 class="Strokeme h-title hoverable">Hi! I'm Robwert Mota.</h1>
+        <h2 class="Subtitle">FULLSTACK DEVELOPER</h2>
+      </div>
+    </div>
+    <div class="vl">
+      <div class="vlinks">
+        <a href="" class="vlink">Get in touch</a>
+      </div>
+    </div>
 
-            <div class="col-md-6 itemPortfolio mb-5">
-                <a href="/UXAdmin/index.html">
-                    <img class="img-fluid rounded" src="assets/img/uxadmin.PNG" alt="" style="box-shadow: 5px 0px 10px grey;">
-                </a>
-            </div>
+    <canvas id="canvas">
+    </canvas>
+  </header>
 
-            <div class="col-md-6 itemPortfolio mb-5">
-                <a href="http://ranxoo.jorgedev.io/">
-                    <img class="img-fluid rounded" src="assets/img/ranxoo.PNG" alt="">
-                </a>
-            </div>
+  <div style="height: 200px;" ></div>
 
-            <div class="col-md-12 itemPortfolio mb-5">
-                <a href="/Templ1/index.html">
-                    <img class="img-fluid rounded" src="assets/img/templ1.jpg" alt="">
-                </a>
-            </div>
-            
-            <div class="col-md-12 itemPortfolio mb-5">
-                <a href="http://www.cantvacp.tk">
-                    <img class="img-fluid rounded" src="assets/img/cantvacp.png" alt="">
-                </a>
-            </div>
+  <div class="container infoSection" id="info">
+    <div class="row align-items-center d-flex justify-content-center">
+      
+      <div class=" infoBox col-md-4 d-flex justify-content-center align-items-center text-center">
+      
+        <div class="circleLogo h-100">
+          <i class="far fa-clock"></i>
         </div>
-    </section>
-    
-    <section id="skills">
-       
-       <h1 class="text-center mb-5">My Skills</h1>
-    
-        <div class="grid-container">
-            <div class="inner-outline-div">HTML5</div>
-            <div class="inner-outline-div">CSS3</div>
-            <div class="inner-outline-div">JS</div>
-            <div class="inner-outline-div">React</div>
-            <div class="inner-outline-div">Vue</div>
-            <div class="inner-outline-div">Laravel</div>
-            <div class="inner-outline-div">PHP</div>
-            <div class="inner-outline-div">WP</div>
-            <div class="inner-outline-div">Node</div>
-            <div class="inner-outline-div">MySQL</div>
-            <div class="inner-outline-div">Creativity</div>
-            <div class="inner-outline-div">MongoDB</div>
+      
+        <div>  
+          <h3 class="numberInfo">+2540</h3>
+          <p>Hours of Experience</p>
         </div>
-    </section>
-    <footer class="container-fluid d-flex justify-content-center align-items-center text-center mb-3">
-        <div class="row">
-            <div class="col-md-12">
-                
-                <p>Get in touch with me if you have something in mind. Don't worry It's free. <br><b>robwert1997@gmail.com</b></p>
-                <p><b>+58424 345 42 24</b></p>
-                <small style="color: lightgray">
-                    Best Regards Mota Robwert
-                </small>
-            </div>
+
+      </div>
+
+      <div class="infoBox col-md-4 d-flex justify-content-center align-items-center">
+      
+        <div class="circleLogo h-100">
+          <i class="fas fa-meteor"></i>
         </div>
-    </footer>
-    <!-- Optional JavaScript -->
-    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
-    <script async defer src="https://buttons.github.io/buttons.js"></script>
+      
+        <div class="h-100">  
+          <h3 class="numberInfo">+25</h3>
+          <p>Projects Completed</p>
+        </div>
+
+      </div>
+  
+      <div class="col-md-4">
+        <p class="coverLetter">
+          Known for creating robust, high-speed web, my web development work has helped grow revenues, accelerate customer acquisition, increase web traffic and deliver an industry-leading competitive advantage.
+        </p>
+      </div>
+    </div>
+  </div>
+  
+  
+  <div class="container" id="circleRotating">
+    <div class="row">
+      <div class="col-md-12">
+        <!-- social circle rotating -->
+        <div id="circle">
+          <svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px"
+            y="0px" width="300px" height="300px" viewBox="0 0 300 300" enable-background="new 0 0 300 300"
+            xml:space="preserve">
+            <defs>
+              <path id="circlePath" d="M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 " />
+            </defs>
+            <circle cx="150" cy="100" r="75" fill="none" />
+            <g>
+              <use xlink:href="#circlePath" fill="none" />
+              <text fill="white">
+                <textPath style="color: white;" xlink:href="#circlePath">WEBSITES NEEDS TO BE CREATIVE </textPath>
+              </text>
+            </g>
+          </svg>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ///////    -->
+  <div class="cursor">
+    <div class="cursor__ball cursor__ball--big ">
+      <svg height="30" width="30">
+        <circle cx="15" cy="15" r="12" stroke-width="0"></circle>
+      </svg>
+    </div>
+
+    <div class="cursor__ball cursor__ball--small">
+      <svg height="50" width="50">
+        <circle cx="5" cy="5" r="4" stroke-width="0"></circle>
+      </svg>
+    </div>
+  </div>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous">
+  </script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
+  </script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+  <script src="assets/js/script.js"></script>
 </body>
 
 </html>
