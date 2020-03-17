@@ -13,6 +13,10 @@ $navBackground-color: #040404;
     display: block;
     margin: 0;
     padding: 0;
+    //border-bottom: 2px solid white;
+    @media (min-width: $screen-md) {
+        border-bottom: none;
+    }
     .logo {
         float: left;
         width: auto;

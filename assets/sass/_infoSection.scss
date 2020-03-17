@@ -9,6 +9,8 @@
         border-radius: 50%;
         min-width: 80px;
         text-align: center;
+        background: radial-gradient(circle at bottom center, #0D3292 45px, rgb(58, 0, 219));
+        box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     }
 
     .infoBox{

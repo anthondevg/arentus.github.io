@@ -71,6 +71,12 @@
   right: 15%;
   margin-left: 0px;
   top: 0;
+  display: none;
+}
+@media (min-width: 992px) {
+  .vl {
+    display: block;
+  }
 }
 .vl .vlinks {
   position: absolute;
@@ -114,20 +120,6 @@ body {
 
 .force-overflow {
   min-height: 450px;
-}
-
-.cursor {
-  pointer-events: none;
-}
-.cursor__ball {
-  position: absolute;
-  top: 0;
-  left: 0;
-  mix-blend-mode: difference;
-  z-index: 9999999;
-}
-.cursor__ball circle {
-  fill: #f7f8fa;
 }
 
 #circle {
@@ -221,6 +213,11 @@ body {
   display: block;
   margin: 0;
   padding: 0;
+}
+@media (min-width: 992px) {
+  .nav {
+    border-bottom: none;
+  }
 }
 .nav .logo {
   float: left;
@@ -560,6 +557,8 @@ body {
   border-radius: 50%;
   min-width: 80px;
   text-align: center;
+  background: radial-gradient(circle at bottom center, #0D3292 45px, #3a00db);
+  box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 .infoSection .infoBox {
   margin-bottom: 50px;
@@ -590,6 +589,26 @@ body {
   background: #040404;
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+.cursor {
+  pointer-events: none;
+  display: none;
+}
+@media (min-width: 992px) {
+  .cursor {
+    display: block;
+  }
+}
+.cursor__ball {
+  position: absolute;
+  top: 0;
+  left: 0;
+  mix-blend-mode: difference;
+  z-index: 9999999;
+}
+.cursor__ball circle {
+  fill: #f7f8fa;
 }
 
 /*# sourceMappingURL=styles.css.map */
