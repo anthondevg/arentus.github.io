@@ -15,7 +15,7 @@ for(var i = 0; i < links.length; i++){
     links[i].addEventListener("click",function(e){
     console.log('console',e.target)
     navTrigger.classList.toggle('active');
-        mainList.classList.toggle('show_list');
+        mainList.classList.toggle('show_list')
     });
 }
 
