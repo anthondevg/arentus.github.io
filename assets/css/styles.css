@@ -124,9 +124,12 @@ body {
 
 #circle {
   color: white;
-  position: relative;
-  width: 100%;
-  padding-bottom: 60%;
+  position: absolute;
+  top: -150px;
+  right: -100px;
+  min-width: 300px;
+  z-index: 8;
+  height: 300px;
   overflow: hidden;
 }
 
@@ -557,7 +560,7 @@ body {
   border-radius: 50%;
   min-width: 80px;
   text-align: center;
-  background: radial-gradient(circle at bottom center, #0D3292 45px, #3a00db);
+  background: #0D3292;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
 .infoSection .infoBox {
@@ -585,10 +588,25 @@ body {
   font-weight: bold !important;
 }
 
+.roleBoard .roleTitle {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 8vw;
+}
+@media (min-width: 992px) {
+  .roleBoard .roleTitle {
+    font-size: 3.5vw;
+  }
+}
+
 body {
-  background: #040404;
+  background: #0a0b0c;
   color: white;
   font-family: "Montserrat", sans-serif;
+}
+
+.container {
+  padding: 4rem;
 }
 
 .cursor {
@@ -609,6 +627,66 @@ body {
 }
 .cursor__ball circle {
   fill: #f7f8fa;
+}
+
+.element {
+  transform: translateY(var(--translateY));
+  will-change: translateY;
+  transition: 0.1s;
+}
+
+.imagesCollage {
+  position: relative;
+}
+
+.frontWork {
+  width: 50%;
+  position: absolute;
+  right: 20px;
+  top: -80px;
+  z-index: 1;
+}
+
+.backWork {
+  width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+  transition: 0.2s;
+}
+.backWork:hover {
+  filter: grayscale(0) !important;
+}
+
+.wrapperShapes {
+  position: relative;
+}
+
+.middleSphereRight {
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  z-index: -1;
+}
+
+.middleSphereLeft {
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: -1;
+}
+
+.bottomSphereRight {
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: -1;
+}
+
+.squareRight {
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
 }
 
 /*# sourceMappingURL=styles.css.map */

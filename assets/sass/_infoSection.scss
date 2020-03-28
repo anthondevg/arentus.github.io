@@ -9,7 +9,7 @@
         border-radius: 50%;
         min-width: 80px;
         text-align: center;
-        background: radial-gradient(circle at bottom center, #0D3292 45px, rgb(58, 0, 219));
+        background: #0D3292;
         box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     }
 
@@ -39,4 +39,15 @@
     font-size: 2rem;
     text-align: left;
     font-weight: bold !important;
+}
+
+.roleBoard{
+    .roleTitle{
+        font-style: normal;
+        font-weight: 600;
+        font-size: 8vw;
+        @media (min-width: $screen-md){
+            font-size: 3.5vw;
+        }
+    }
 }

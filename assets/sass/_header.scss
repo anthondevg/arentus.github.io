@@ -141,9 +141,12 @@ body {
 
 #circle {
     color: white;
-    position: relative;
-    width: 100%;
-    padding-bottom: 60%;
+    position: absolute;
+    top: -150px;
+    right: -100px;
+    min-width: 300px;
+    z-index: 8;
+    height: 300px;
     overflow: hidden;
 }
 

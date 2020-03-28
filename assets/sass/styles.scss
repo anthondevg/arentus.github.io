@@ -7,7 +7,7 @@
 @import 'infoSection.scss';
 
 body{
-    background: #040404;
+    background: #0a0b0c;
     color: white;
     font-family: $default-font;
 }
@@ -17,6 +17,9 @@ body{
 body {
 }
 
+.container{
+    padding: 4rem;
+}
 .cursor {
     pointer-events: none;
     // hide in mobile
@@ -39,3 +42,60 @@ body {
     }
 }
 
+.element {
+    transform: translateY(var(--translateY));
+    will-change: translateY;
+    transition: .1s;
+
+}
+.imagesCollage{
+    position: relative;
+}
+.frontWork{
+    width: 50%;
+    position: absolute;
+    right: 20px;
+    top: -80px;
+    z-index: 1;
+}
+
+.backWork{
+    width: 100%;
+    margin: 0 auto;
+    z-index: -1;
+    transition: .2s;
+    &:hover{
+        filter: grayscale(0) !important;
+    }
+}
+
+.wrapperShapes{
+    position: relative;
+}
+.middleSphereRight{
+    position: absolute;
+    right: 0px;
+    top: 50%;
+    z-index: -1;
+}
+
+.middleSphereLeft{
+    position: absolute;
+    left: 0px;
+    top: 50%;
+    z-index: -1;
+}
+
+.bottomSphereRight{
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    z-index: -1;
+}
+
+.squareRight{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -1;
+}
