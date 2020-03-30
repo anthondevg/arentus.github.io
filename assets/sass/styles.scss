@@ -5,6 +5,7 @@
 @import 'nav.scss';
 
 @import 'infoSection.scss';
+@import 'workSection.scss';
 
 body{
     background: #0a0b0c;
@@ -13,9 +14,6 @@ body{
 }
 
 // cursor styles
-
-body {
-}
 
 .container{
     padding: 4rem;
@@ -55,7 +53,7 @@ body {
     width: 50%;
     position: absolute;
     right: 20px;
-    top: -80px;
+    top: 0px;
     z-index: 1;
 }
 
@@ -98,4 +96,16 @@ body {
     left: 0px;
     bottom: 0px;
     z-index: -1;
+}
+
+.linearGradient{
+    background: linear-gradient(89.23deg, #153A98 1.04%, #9423ED 97.95%);
+}
+
+.no-margin{
+    margin: 0;
+}
+
+.no-padding{
+    padding: 0;
 }
