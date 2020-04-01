@@ -1,0 +1,32 @@
+.skillsPresentation{
+    padding-left: 000px;
+    padding-right: 000px;
+    .skillMsg{
+        font-size: 5rem;
+        font-weight: 800;
+    }
+}
+
+.skillsSection{
+    display: flex;
+    justify-content: center;
+    .wrapperSkill{
+        text-align: center;
+        margin-bottom: 10px;
+        padding: 20px;
+        height: 100px;
+        width: 100px;
+        border: 1px solid white;
+        background-color: #0F0F0F;
+
+    }
+    .skillIcon{ 
+        text-align: center;
+        font-size: 3em;
+    }
+    .skillTitle{
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}

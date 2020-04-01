@@ -6,8 +6,9 @@
 
 @import 'infoSection.scss';
 @import 'workSection.scss';
+@import 'skillSection.scss';
 
-body{
+body {
     background: #0a0b0c;
     color: white;
     font-family: $default-font;
@@ -15,14 +16,15 @@ body{
 
 // cursor styles
 
-.container{
+.container {
     padding: 4rem;
 }
+
 .cursor {
     pointer-events: none;
     // hide in mobile
     display: none;
-    
+
     @media (min-width: $screen-md) {
         display: block;
     }
@@ -46,10 +48,12 @@ body{
     transition: .1s;
 
 }
-.imagesCollage{
+
+.imagesCollage {
     position: relative;
 }
-.frontWork{
+
+.frontWork {
     width: 50%;
     position: absolute;
     right: 20px;
@@ -57,55 +61,65 @@ body{
     z-index: 1;
 }
 
-.backWork{
+.backWork {
     width: 100%;
     margin: 0 auto;
     z-index: -1;
     transition: .2s;
-    &:hover{
+
+    &:hover {
         filter: grayscale(0) !important;
     }
 }
 
-.wrapperShapes{
+.wrapperShapes {
     position: relative;
 }
-.middleSphereRight{
+
+.middleSphereRight {
     position: absolute;
     right: 0px;
     top: 50%;
     z-index: -1;
 }
 
-.middleSphereLeft{
+.middleSphereLeft {
     position: absolute;
     left: 0px;
     top: 50%;
     z-index: -1;
 }
 
-.bottomSphereRight{
+.bottomSphereRight {
     position: absolute;
     right: 0px;
     bottom: 0;
     z-index: -1;
 }
 
-.squareRight{
+.squareRight {
     position: absolute;
     left: 0px;
     bottom: 0px;
     z-index: -1;
 }
 
-.linearGradient{
-    background: linear-gradient(89.23deg, #153A98 1.04%, #9423ED 97.95%);
+.linearGradient {
+    background: linear-gradient(180deg, #0D3292 0%, #2374ED 100%);
 }
 
-.no-margin{
+.linearGradientAlt {
+    background: linear-gradient(180deg,#153A98  0%,  #9423ED 50%);
+}
+
+.linearGradientBlack {
+    background: linear-gradient(180deg, #171717 13.99%, #0F0F0F 97.48%);
+}
+
+.no-margin {
     margin: 0;
 }
 
-.no-padding{
+.no-padding {
     padding: 0;
 }

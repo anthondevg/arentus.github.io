@@ -642,16 +642,18 @@ body {
 .projectList .projectTitle {
   font-size: 2rem;
   font-weight: bold;
+  line-height: 1em;
 }
 .projectList .projectImage {
   background: white;
-  border-radius: 3px;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
   min-height: 100%;
+  border-radius: 5px 0px 0px 5px;
   background-position: center;
 }
 .projectList .projectDescription {
   padding: 3em !important;
+  border-radius: 0 5px 5px 0;
   transition: 0.5s;
 }
 @media (min-width: 992px) {
@@ -662,18 +664,52 @@ body {
 .projectList .skillsSet {
   padding: 0;
   margin: 0;
+  margin-left: -1 0px;
+  margin-bottom: 20px;
 }
 .projectList .skillsSet .skill {
   border: 1px solid white;
   border-radius: 100px;
   display: inline-block;
-  margin: 2px;
-  font-size: 0.8rem;
-  padding: 5px 7px;
+  margin: 1px;
+  font-size: 0.78rem;
+  padding: 3px 7px;
 }
 
 .three-dots {
   font-size: 10rem;
+}
+
+.skillsPresentation {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.skillsPresentation .skillMsg {
+  font-size: 5rem;
+  font-weight: 800;
+}
+
+.skillsSection {
+  display: flex;
+  justify-content: center;
+}
+.skillsSection .wrapperSkill {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 20px;
+  height: 100px;
+  width: 100px;
+  border: 1px solid white;
+  background-color: #0F0F0F;
+}
+.skillsSection .skillIcon {
+  text-align: center;
+  font-size: 3em;
+}
+.skillsSection .skillTitle {
+  padding: 5px;
+  text-align: center;
+  font-size: 1rem;
 }
 
 body {
@@ -767,7 +803,15 @@ body {
 }
 
 .linearGradient {
-  background: linear-gradient(89.23deg, #153A98 1.04%, #9423ED 97.95%);
+  background: linear-gradient(180deg, #0D3292 0%, #2374ED 100%);
+}
+
+.linearGradientAlt {
+  background: linear-gradient(180deg, #153A98 0%, #9423ED 50%);
+}
+
+.linearGradientBlack {
+  background: linear-gradient(180deg, #171717 13.99%, #0F0F0F 97.48%);
 }
 
 .no-margin {
