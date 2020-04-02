@@ -7,8 +7,8 @@
         margin-right: 10px;
         border-radius: 50%;
         min-width: 80px;
+        background-color: $primary-color;
         text-align: center;
-        background: $primary-color;
         box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
     }
 
@@ -45,7 +45,6 @@
         font-style: normal;
         font-weight: 600;
         font-size: 8vw;
-        mix-blend-mode: difference;
         @media (min-width: $screen-md){
             font-size: 3.5vw;
         }

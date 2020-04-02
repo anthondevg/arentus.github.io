@@ -9,7 +9,7 @@
 @import 'skillSection.scss';
 
 body {
-    background: #0a0b0c;
+    background: $black;
     color: white;
     font-family: $default-font;
 }
@@ -90,11 +90,33 @@ body {
     z-index: -1;
 }
 
+.bottomShapeLeft{
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    z-index: -2;
+}
+
+.hideMobile{
+    display: none;
+    @media (min-width: $screen-md){
+        display: block;
+    }
+}
+.hideDesktop{
+    display: block;
+    @media (min-width: $screen-md){
+        display: none;
+    }
+}
+
+
 .bottomSphereRight {
     position: absolute;
     right: 0px;
     bottom: 0;
     z-index: -1;
+    
 }
 
 .squareRight {
@@ -109,7 +131,7 @@ body {
 }
 
 .linearGradientAlt {
-    background: linear-gradient(180deg,#153A98  0%,  #9423ED 50%);
+    background: linear-gradient(180deg,$primary-color  0%,  $secondary-color 50%);
 }
 
 .linearGradientBlack {

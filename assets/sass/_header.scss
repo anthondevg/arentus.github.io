@@ -12,7 +12,7 @@
         position: absolute;
         top: 0;
         left: 0;
-        background: linear-gradient(119.11deg, rgba(13, 50, 146, 0.96) 10.18%, rgba(148, 35, 237, 0.5856) 90.78%);
+        background: linear-gradient(119.11deg,  rgba($color: $primary-color, $alpha: 0.75)  10.18%, rgba($color: $black, $alpha: 0.75) 90.78%);
         z-index: 1;
         width: 100%;
         height: 100vh;
