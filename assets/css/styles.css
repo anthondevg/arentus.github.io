@@ -26,11 +26,33 @@
   height: 100vh;
 }
 
+.socialFeed {
+  position: absolute;
+  bottom: 20px;
+  z-index: 2;
+}
+.socialFeed .list {
+  z-index: 3;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+.socialFeed .list a {
+  color: white;
+}
+.socialFeed .list a i {
+  padding: 10px;
+  font-size: 1.5em;
+}
+.socialFeed .list a:hover {
+  color: #058c42;
+}
+
 .h-row {
-  z-index: 9;
+  z-index: 2;
 }
 .h-row .h-titles {
-  z-index: 9;
+  z-index: 2;
   height: 100vh;
   display: flex;
   justify-content: center;
