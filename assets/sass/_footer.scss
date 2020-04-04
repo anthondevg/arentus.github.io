@@ -1,0 +1,29 @@
+.footer{
+    padding-left: 10%;
+    height: 50vh;
+    padding-top: 10%;
+    background-color: white;
+    padding-right: 10%;
+    color: black;
+
+    .footerMsg{
+        font-size: 3rem;
+        font-weight: 800;
+    }
+    .footerEmail{
+        color: #C1C1C1;
+        font-weight: 800;
+    }
+    .socialLinks{
+        
+        i {
+            font-size: 2rem;
+            margin-right: 20px;
+            color: white;
+            background-color: #C1C1C1;
+            padding: 20px;
+            border-radius: 100px;
+        }
+    }
+
+}

@@ -96,6 +96,7 @@ $navBackground-color: #040404;
 
     .navTrigger i {
         background-color: black;
+        mix-blend-mode: difference;
     }
 }
 
@@ -197,12 +198,14 @@ $navBackground-color: #040404;
 }
 .navTrigger i {
     background-color: $hamburguer-icon-color;
-    border-radius: 15px;
+    border-radius: 50px;
     content: '';
     display: block;
     width: 100%;
     height: 2px;
     transition: .8s;
+    mix-blend-mode: difference;
+    background-blend-mode: difference;
 }
 
 .navTrigger i:nth-child(1) {
@@ -211,6 +214,7 @@ $navBackground-color: #040404;
     animation: outT 0.8s backwards;
     -webkit-animation-direction: reverse;
     animation-direction: reverse;
+    mix-blend-mode: difference;
 }
 
 .navTrigger i:nth-child(2) {

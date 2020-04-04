@@ -8,7 +8,6 @@
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
 .h-wrapper {
   height: 100vh;
-  background: url("../img/background.jpg");
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
@@ -20,7 +19,7 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(119.11deg, rgba(5, 140, 66, 0.75) 10.18%, rgba(2, 2, 2, 0.75) 90.78%);
+  background: linear-gradient(119.11deg, rgba(18, 197, 91, 0.96) 10.18%, rgba(13, 50, 146, 0.96) 90.78%);
   z-index: 1;
   width: 100%;
   height: 100vh;
@@ -225,6 +224,7 @@ body {
 }
 .affix .navTrigger i {
   background-color: black;
+  mix-blend-mode: difference;
 }
 
 .navTrigger {
@@ -319,12 +319,14 @@ body {
 
 .navTrigger i {
   background-color: white;
-  border-radius: 15px;
+  border-radius: 50px;
   content: "";
   display: block;
   width: 100%;
   height: 2px;
   transition: 0.8s;
+  mix-blend-mode: difference;
+  background-blend-mode: difference;
 }
 
 .navTrigger i:nth-child(1) {
@@ -333,6 +335,7 @@ body {
   animation: outT 0.8s backwards;
   -webkit-animation-direction: reverse;
   animation-direction: reverse;
+  mix-blend-mode: difference;
 }
 
 .navTrigger i:nth-child(2) {
@@ -671,7 +674,8 @@ body {
 .projectList .projectImage {
   background: white;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
-  min-height: 100%;
+  min-height: 250px;
+  min-width: 250px;
   border-radius: 3px;
   background-position: center;
 }
@@ -892,6 +896,31 @@ body {
     transform: translate(60px, -80px);
   }
 }
+.footer {
+  padding-left: 10%;
+  height: 50vh;
+  padding-top: 10%;
+  background-color: white;
+  padding-right: 10%;
+  color: black;
+}
+.footer .footerMsg {
+  font-size: 3rem;
+  font-weight: 800;
+}
+.footer .footerEmail {
+  color: #C1C1C1;
+  font-weight: 800;
+}
+.footer .socialLinks i {
+  font-size: 2rem;
+  margin-right: 20px;
+  color: white;
+  background-color: #C1C1C1;
+  padding: 20px;
+  border-radius: 100px;
+}
+
 body {
   background: #020202;
   color: white;
