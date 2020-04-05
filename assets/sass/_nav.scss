@@ -2,7 +2,7 @@
 $heightNav: 80px;
 $linksColor: white;
 $hamburguer-icon-color: white;
-$navBackground-color: #040404;
+$navBackground-color: rgb(14, 14, 14);
 
 .nav {
     width: 100%;
@@ -158,9 +158,14 @@ $navBackground-color: #040404;
     .nav div.main_list ul li a {
         text-align: center;
         width: 100%;
-        font-size: 5vw;
+        font-size: 4vw;
+        font-family: 'Montserrat';
         color: white;
+        font-weight: bold;
+        line-height: 30px;
+        text-transform: uppercase;
         margin-bottom: 30px;
+        
     }
 
     .nav div.main_list ul li a:hover {
