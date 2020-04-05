@@ -92,22 +92,25 @@ body {
     z-index: -1;
 }
 
-.bottomShapeLeft{
+.bottomShapeLeft {
     position: absolute;
     left: 0px;
     bottom: 0px;
     z-index: -2;
 }
 
-.hideMobile{
+.hideMobile {
     display: none;
-    @media (min-width: $screen-md){
+
+    @media (min-width: $screen-md) {
         display: block;
     }
 }
-.hideDesktop{
+
+.hideDesktop {
     display: block;
-    @media (min-width: $screen-md){
+
+    @media (min-width: $screen-md) {
         display: none;
     }
 }
@@ -118,7 +121,7 @@ body {
     right: 0px;
     bottom: 0;
     z-index: -1;
-    
+
 }
 
 .squareRight {
@@ -133,7 +136,7 @@ body {
 }
 
 .linearGradientAlt {
-    background: linear-gradient(180deg,$primary-color  0%,  $secondary-color 50%);
+    background: linear-gradient(180deg, $primary-color 0%, $secondary-color 50%);
 }
 
 .linearGradientBlack {
