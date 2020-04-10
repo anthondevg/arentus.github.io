@@ -1,0 +1,57 @@
+.reviewsSection {
+    margin-top: 120px;
+
+    .reviewsTitle {
+        i {
+            font-size: 3rem;
+        }
+
+        .checkCircle {
+            background-color: $primary-color;
+            padding: 20px;
+            border-radius: 100px;
+            box-shadow: 0px 10px 5px #151515;
+        }
+
+        h2 {
+            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            font-size: 3rem;
+        }
+    }
+
+    // review component
+
+    .photoReview {
+        border-radius: 1000px;
+        height: 130px;
+        width: 130px;
+    }
+
+    .textReview {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 21px;
+        color: rgb(184, 184, 184);
+        line-height: 27px;
+    }
+
+    .authorReview {
+        font-family: Georgia;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 24px;
+        line-height: 27px;
+        display: flex;
+        align-items: center;
+        color: #9b9b9b;
+        &::before{
+            content: '';
+            display: block;
+            width: 50px;
+            height: 5px;
+            background-color: #9b9b9b;
+            margin-right: 10px;
+        }
+    }
+}

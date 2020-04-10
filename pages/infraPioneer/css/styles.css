@@ -147,6 +147,54 @@
   background-position: center center;
 }
 
+.reviewsSection {
+  margin-top: 120px;
+}
+.reviewsSection .reviewsTitle i {
+  font-size: 3rem;
+}
+.reviewsSection .reviewsTitle .checkCircle {
+  background-color: #006AFE;
+  padding: 20px;
+  border-radius: 100px;
+  box-shadow: 0px 10px 5px #151515;
+}
+.reviewsSection .reviewsTitle h2 {
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  font-size: 3rem;
+}
+.reviewsSection .photoReview {
+  border-radius: 1000px;
+  height: 130px;
+  width: 130px;
+}
+.reviewsSection .textReview {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 21px;
+  color: #b8b8b8;
+  line-height: 27px;
+}
+.reviewsSection .authorReview {
+  font-family: Georgia;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 27px;
+  display: flex;
+  align-items: center;
+  color: #9b9b9b;
+}
+.reviewsSection .authorReview::before {
+  content: "";
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #9b9b9b;
+  margin-right: 10px;
+}
+
 body {
   background-color: #1B1B1B;
   color: white;
