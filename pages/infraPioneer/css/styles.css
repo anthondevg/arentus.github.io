@@ -1,0 +1,176 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+/* _settings.scss */
+/* 
+    @author: Robwert Mota
+    @website: DevCore
+*/
+/* COLOR SCHEME ---  */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+.nav {
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  height: 70px;
+  background-color: rgba(21, 21, 21, 0.8);
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  font-size: 1.5rem;
+  font-weight: bold;
+  z-index: 99;
+}
+@media (max-width: 768px) {
+  .nav {
+    position: static;
+  }
+}
+.nav .logo {
+  padding: 15px;
+}
+.nav .logo a {
+  color: white;
+}
+.nav .loginButton {
+  background-color: #006AFE;
+  padding: 15px 30px;
+  border-left: 0px solid white;
+}
+.nav .loginButton a {
+  color: white;
+}
+
+.header {
+  position: relative;
+  height: 100vh;
+}
+.header #myVideo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -99;
+}
+@media (max-width: 992px) {
+  .header {
+    position: static;
+    height: 100%;
+  }
+  .header #myVideo {
+    position: static;
+    width: 100%;
+    height: auto;
+  }
+}
+.header .headerContent {
+  flex-direction: row-reverse;
+}
+@media (min-width: 992px) {
+  .header .headerContent {
+    height: 100vh;
+  }
+}
+.header .reminderInvitation {
+  padding: 30px 60px;
+  min-height: auto;
+  background: #2B2B2B;
+  width: 365px;
+}
+@media (max-width: 992px) {
+  .header .reminderInvitation {
+    text-align: center;
+  }
+}
+.header .reminderInvitation .reminderTitle {
+  font-size: 2em;
+  font-weight: bold;
+}
+.header .reminderInvitation p {
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 12px;
+}
+.header a {
+  color: white;
+}
+.header .activateContainer {
+  position: absolute;
+  bottom: 0;
+  padding: 12px;
+  background-color: #006AFE;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  width: 100%;
+  text-transform: uppercase;
+  font-family: "Montserrat";
+  font-weight: bold;
+  text-align: left;
+  padding-left: 50px;
+}
+@media (max-width: 992px) {
+  .header .activateContainer {
+    position: static;
+    display: inline-block;
+    background-color: #006AFE;
+    text-align: center;
+    border-radius: 30px 30px 0px 0px;
+  }
+  .header .activateContainer h3 {
+    font-size: 0.3rem;
+  }
+}
+.header .activateContainer h3 {
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.speechSection .divSpeech {
+  background-color: #006AFE;
+  background-image: url("data:image/svg+xml,%3Csvg width='6' height='6' viewBox='0 0 6 6' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='%23151515' fill-opacity='0.4' fill-rule='evenodd'%3E%3Cpath d='M5 0h1L0 6V5zM6 5v1H5z'/%3E%3C/g%3E%3C/svg%3E");
+  color: white;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 5% 8%;
+  text-align: center;
+  height: 100%;
+}
+.speechSection .divSpeech p {
+  font-size: 1.7rem;
+}
+
+.bannerImage {
+  background-attachment: fixed;
+  min-height: 100%;
+  background-position: center center;
+}
+
+body {
+  background-color: #1B1B1B;
+  color: white;
+  font-family: "Montserrat", sans-serif;
+}
+
+.fontBold {
+  font-weight: bold;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+.bgPrimaryColor {
+  background-color: #006AFE;
+}
+
+.noPadding {
+  padding: 0;
+}
+
+.noMargin {
+  margin: 0;
+}
+
+/*# sourceMappingURL=styles.css.map */

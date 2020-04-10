@@ -1,0 +1,26 @@
+@import 'settings.scss';
+@import 'nav.scss';
+@import 'header.scss';
+@import 'speechSection.scss';
+
+body{
+    background-color: $black;
+    color: white;
+    font-family: $primary-font;
+}
+
+.fontBold{
+    font-weight: bold;
+}
+.uppercase{
+    text-transform: uppercase;
+}
+.bgPrimaryColor{
+    background-color: $primary-color;
+}
+.noPadding{
+    padding: 0;
+}
+.noMargin{
+    margin: 0;
+}
