@@ -25,7 +25,8 @@
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     <!-- Font Awesome -->
     <script src="https://kit.fontawesome.com/de1c643c83.js" crossorigin="anonymous"></script>
-
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <title>DEVCORE</title>
 </head>
@@ -81,8 +82,9 @@
                     A Business that doesn’t have explosive growth is a business that is going to fail.
                 </p>
             </div>
-            
-            <div class="col-md-6 bannerImage" style="background-image: url('https://wallpaperaccess.com/full/656665.jpg');">
+
+            <div class="col-md-6 bannerImage"
+                style="background-image: url('https://wallpaperaccess.com/full/656665.jpg');">
             </div>
         </div>
     </div>
@@ -92,18 +94,188 @@
             <div class="col-md-12 text-center reviewsTitle">
                 <!-- <i class="fas fa-check my-4 checkCircle"></i> -->
                 <h2 class="fontBold uppercase">Our Reviews</h2>
-
             </div>
         </div>
-        <div class="row d-flex justify-content-center">
-            <div class="col-md-7 d-flex align-items-center text-center flex-column">
-                <img src="https://assets.entrepreneur.com/content/3x2/2000/20200127202110-ceo-mujer.jpeg" class="img-fluid photoReview mb-3" alt="">
+    </div>
+    <div class="container-fluid reviewsContent">
+        <div class="row">
+            <!-- Slider main container -->
+            <div class="swiper-container">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
 
-                <p class="textReview">James sounds like a pretty amazing guy, and he’s developed quite the relationship with George, going from broker to friend.
-                </p>
-                <p class="authorReview">Lindsey Hernandez</p>
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://assets.entrepreneur.com/content/3x2/2000/20200127202110-ceo-mujer.jpeg"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <span class="textReview">James sounds like a pretty amazing guy, and he’s developed quite
+                                the relationship
+                                with George, going from broker to friend.</span>
+
+                            <p class="authorReview">Lindsey Hernandez</p>
+
+                            <span class="starsRow">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                            </span>
+
+                        </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://images.unsplash.com/photo-1511485977113-f34c92461ad9?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=49899e285952107fdfd9415b8d3bf74a&auto=format&fit=crop&w=634&q=80"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Kelly Woods</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://images.unsplash.com/photo-1502980426475-b83966705988?ixlib=rb-0.3.5&s=739aef35459daa8aaeaa55363d492bc1&auto=format&fit=crop&w=673&q=80"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Roger Rice</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://images.unsplash.com/photo-1502768040783-423da5fd5fa0?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=0c6416353c255d2746a68c8a83943bdf&auto=format&fit=crop&w=634&q=80"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Jessica Garcia</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=9a138cf8acd85036bd292d7f10074e79&auto=format&fit=crop&w=634&q=80"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Sean Adams</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://images.unsplash.com/photo-1500080209535-717dd4ebaa6b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ddee81e2e574e8190b07139ddb0f1938&auto=format&fit=crop&w=687&q=80"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Crystal Davidson</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="picture">
+                            <img src="https://images.unsplash.com/photo-1500080209535-717dd4ebaa6b?ixlib=rb-0.3.5&ixid=eyJhcHBfaWQiOjEyMDd9&s=ddee81e2e574e8190b07139ddb0f1938&auto=format&fit=crop&w=687&q=80"
+                                alt="">
+                        </div>
+                        <div class="detail">
+                            <h3>Crystal Davidson</h3>
+                            <span>Web Designer</span>
+                        </div>
+                    </div>
+                </div>
+                <!-- If we need pagination -->
+                <!-- <div class="swiper-pagination"></div> -->
+
+                <!-- If we need navigation buttons -->
+                    <!-- <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div> -->
+
+                <!-- If we need scrollbar -->
+                <!--<div class="swiper-scrollbar"></div>-->
             </div>
         </div>
+        <div style="height: 150px;"></div>
+        <svg class="bottomShapeLeft" width="283" height="476" viewBox="0 0 283 476" fill="none"
+            xmlns="http://www.w3.org/2000/svg">
+            <path d="M283 85.0349L0 0V476H212.25L283 85.0349Z" fill="url(#paint0_linear)" />
+            <defs>
+                <linearGradient id="paint0_linear" x1="141.5" y1="0" x2="141.5" y2="476" gradientUnits="userSpaceOnUse">
+                    <stop stop-color="#1B1B1B" />
+                    <stop offset="1" stop-color="#006AFE" />
+                </linearGradient>
+            </defs>
+        </svg>
+
+    </div>
+
+    <div class="container-fluid brandsSection">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="brandsTitleWrapper">
+                        <h3>OUR PARTNERS</h3>
+                    </div>
+                    <div class="spacer"></div>
+    
+                </div>
+            </div>
+        </div>
+        <div class="container partnersWrapper pb-5">
+            <div class="row partnersRow">
+
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-adobe"></i>
+                </div>
+
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-apple"></i>
+                </div>
+
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-amazon"></i>
+                </div>
+
+                <div class="col-md-2 col-4  partner">
+                    <i class="fab fa-digital-ocean"></i>
+                </div>
+
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-angular"></i>
+                </div>
+
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-laravel"></i>
+                </div>
+
+                <div class="col-md-2 col-4 offset-md-1 partner">
+                    <i class="fab fa-twitter"></i>
+                </div>
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-google"></i>
+                </div>
+                <div class="col-md-2 col-4 partner">
+                    <i class="fab fa-stripe"></i>
+                </div>
+                <div class="col-md-2 col-6 partner">
+                    <i class="fab fa-wordpress"></i>
+                </div>
+                <div class="col-md-2 col-6 partner">
+                    <i class="fab fa-react"></i>
+                </div>
+
+                
+            </div>
+        </div>
+    </div>
+
+    <div class="container activateSection">
+        <h2>Welcome to the New Age</h2>
     </div>
 
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
@@ -116,6 +288,29 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
 
+    <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+    <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+    <script>
+        var swiper = new Swiper(".swiper-container", {
+            effect: "coverflow",
+            grabCursor: true,
+            centeredSlides: true,
+            slidesPerView: "auto",
+            coverflowEffect: {
+                rotate: 20,
+                stretch: 0,
+                depth: 350,
+                modifier: 1,
+                slideShadows: true
+            },
+            autoplay: {
+                delay: 5000,
+            },
+            pagination: {
+                el: ".swiper-pagination"
+            }
+        });
+    </script>
 </body>
 
 </html>

@@ -3,13 +3,18 @@
 @import 'header.scss';
 @import 'speechSection.scss';
 @import 'reviews.scss';
+@import 'brandsSection.scss';
+@import 'activateSection.scss';
+
 
 body{
-    background-color: $black;
+    background-color: $altBlack;
     color: white;
     font-family: $primary-font;
 }
-
+.spacer{
+    height: 100px;
+}
 .fontBold{
     font-weight: bold;
 }
@@ -24,4 +29,24 @@ body{
 }
 .noMargin{
     margin: 0;
+}
+
+
+.bottomShapeRight {
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    z-index: -1;
+
+}
+
+.bottomShapeLeft {
+    position: absolute;
+    left: 0px;
+    bottom: 0;
+    z-index: -1;
+
+}
+.reviewsContent{
+    position: relative;
 }

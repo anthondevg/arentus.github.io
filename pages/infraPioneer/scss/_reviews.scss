@@ -1,57 +1,79 @@
 .reviewsSection {
-    margin-top: 120px;
+  margin-top: 120px;
 
-    .reviewsTitle {
-        i {
-            font-size: 3rem;
-        }
-
-        .checkCircle {
-            background-color: $primary-color;
-            padding: 20px;
-            border-radius: 100px;
-            box-shadow: 0px 10px 5px #151515;
-        }
-
-        h2 {
-            text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-            font-size: 3rem;
-        }
+  .reviewsTitle {
+    i {
+      font-size: 3rem;
     }
 
-    // review component
-
-    .photoReview {
-        border-radius: 1000px;
-        height: 130px;
-        width: 130px;
+    .checkCircle {
+      background-color: $primary-color;
+      padding: 20px;
+      border-radius: 100px;
+      box-shadow: 0px 10px 5px #151515;
     }
 
-    .textReview {
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 21px;
-        color: rgb(184, 184, 184);
-        line-height: 27px;
+    h2 {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 3rem;
     }
+  }
 
-    .authorReview {
-        font-family: Georgia;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 24px;
-        line-height: 27px;
-        display: flex;
-        align-items: center;
-        color: #9b9b9b;
-        &::before{
-            content: '';
-            display: block;
-            width: 50px;
-            height: 5px;
-            background-color: #9b9b9b;
-            margin-right: 10px;
-        }
-    }
+  // review component
+
+  .photoReview {
+    border-radius: 1000px;
+    height: 130px;
+    width: 130px;
+  }
+
+
+}
+
+
+// !!!!!!
+
+.swiper-container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 380px;
+  background-color: $black;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.picture {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+
+  h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(184, 184, 184);
+  }
 }
