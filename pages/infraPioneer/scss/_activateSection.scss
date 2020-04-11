@@ -1,4 +1,48 @@
-.activateSection{
+.activateSection {
+    position: relative;
+    h3 {
+        font-family: Montserrat;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 5rem;
 
-    
+        @media (max-width: $screen-md) {
+            font-size: 3rem;
+        }
+
+    }
+
+    .form-control {
+        font-size: 3vw;
+        padding-left: 20px;
+        @media (max-width: $screen-md) {
+            font-size: 1.5rem;
+        }
+    }
+
+    .blueSphere{
+        z-index: 1;
+        fill: linear-gradient(180deg, #006AFE 0%, rgba(0, 106, 254, 1) 100%);
+        transform: translate(-20px,-120px);
+        transition: 1s ease-in-out;
+        animation-name: bounce;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes bounce {
+        0%{
+            transform: translate(-20px,-120px);
+        }
+        50%{
+            transform: translate(-40px,-90px);
+        }
+        100%{
+            transform: translate(-20px,-120px);
+        }
+    }
+
+    .whiteSphere{
+        transform: translate(-50px,-20px);
+    }
 }

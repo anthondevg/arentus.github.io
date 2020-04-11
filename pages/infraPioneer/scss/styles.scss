@@ -5,6 +5,7 @@
 @import 'reviews.scss';
 @import 'brandsSection.scss';
 @import 'activateSection.scss';
+@import 'forms.scss';
 
 
 body{
@@ -49,4 +50,32 @@ body{
 }
 .reviewsContent{
     position: relative;
+}
+
+.underBorderedTitle:after {
+    background: none repeat scroll 0 0 $primary-color;
+    bottom: -10px;
+    content: "";
+    display: block;
+    height: 25px;
+    position: relative;
+    width: 200px;
+}
+
+.bigBtn{
+    font-size: 2em;
+    border-radius: 3px;
+    font-weight: bold;
+    padding: 10px 40px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.featuresSection{
+    .row{
+        position: relative;
+    }
+    .svgShape{
+        width: 300px;
+        height: 300px;
+    }
 }

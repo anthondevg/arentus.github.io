@@ -244,6 +244,7 @@
   font-weight: 700;
   padding: 20px 100px;
   text-align: center;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 @media (max-width: 992px) {
   .brandsSection .brandsTitleWrapper h3 {
@@ -276,6 +277,58 @@
   position: absolute;
   bottom: 0;
   z-index: 0;
+}
+
+.activateSection {
+  position: relative;
+}
+.activateSection h3 {
+  font-family: Montserrat;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 5rem;
+}
+@media (max-width: 992px) {
+  .activateSection h3 {
+    font-size: 3rem;
+  }
+}
+.activateSection .form-control {
+  font-size: 3vw;
+  padding-left: 20px;
+}
+@media (max-width: 992px) {
+  .activateSection .form-control {
+    font-size: 1.5rem;
+  }
+}
+.activateSection .blueSphere {
+  z-index: 1;
+  fill: linear-gradient(180deg, #006AFE 0%, #006afe 100%);
+  transform: translate(-20px, -120px);
+  transition: 1s ease-in-out;
+  animation-name: bounce;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+@keyframes bounce {
+  0% {
+    transform: translate(-20px, -120px);
+  }
+  50% {
+    transform: translate(-40px, -90px);
+  }
+  100% {
+    transform: translate(-20px, -120px);
+  }
+}
+.activateSection .whiteSphere {
+  transform: translate(-50px, -20px);
+}
+
+.form-control {
+  border-radius: 0px;
+  border: none;
 }
 
 body {
@@ -324,6 +377,32 @@ body {
 
 .reviewsContent {
   position: relative;
+}
+
+.underBorderedTitle:after {
+  background: none repeat scroll 0 0 #006AFE;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 25px;
+  position: relative;
+  width: 200px;
+}
+
+.bigBtn {
+  font-size: 2em;
+  border-radius: 3px;
+  font-weight: bold;
+  padding: 10px 40px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.featuresSection .row {
+  position: relative;
+}
+.featuresSection .svgShape {
+  width: 300px;
+  height: 300px;
 }
 
 /*# sourceMappingURL=styles.css.map */
