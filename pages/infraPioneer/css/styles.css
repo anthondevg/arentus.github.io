@@ -327,8 +327,42 @@
 }
 
 .form-control {
-  border-radius: 0px;
+  border-radius: 3px;
   border: none;
+}
+
+.stepContent .wrapperImage {
+  background-size: cover;
+  background-position: center;
+  padding: 100px 50px;
+  border-radius: 5px;
+}
+.stepContent .wrapperImage h5 {
+  background-color: rgba(43, 43, 43, 0.1);
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+}
+.stepContent .wrapperImage h2 {
+  background: #1B1B1B;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-weight: bold;
+  font-size: 2rem;
+  color: #006AFE;
+}
+.stepContent .wrapperImage p {
+  background-color: rgba(43, 43, 43, 0.1);
+  font-weight: bold;
+  display: inline-block;
+  padding: 5px 10px;
+}
+
+.formWrapper {
+  padding-left: 20%;
+  padding-right: 20%;
 }
 
 body {
@@ -343,6 +377,15 @@ body {
 
 .fontBold {
   font-weight: bold;
+}
+
+.primaryTitle {
+  font-size: 3rem;
+  font-weight: bold;
+}
+
+.link {
+  color: white;
 }
 
 .uppercase {
