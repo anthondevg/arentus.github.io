@@ -55,34 +55,56 @@
     }
     .activateContainer{
         position: absolute;
-
+        transition: .5s ease-in-out;
         // estilos para mobile
         @media (max-width: $screen-md){
             position: static;
             display: inline-block;
-            background-color: $primary-color;
             text-align: center;
-            border-radius: 30px 30px 0px 0px;
-            
+            background-color: $primary-color;
             h3{
                 font-size: .3rem;
             }
         }
-    
+
+        &:hover{
+            transform: translateY(-10px);     
+            text-shadow: 0px 10px 200px $primary-color;
+           
+        }
         bottom: 0;
         padding: 12px;
-        background-color: $primary-color;
-        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
         width: 100%;
         text-transform: uppercase;
         font-family: 'Montserrat';
         font-weight: bold;
-        text-align: left;
+        text-align: center;
         padding-left: 50px;
+
         //border-radius: 10px 10px 0px 0px;
         h3{
             font-weight: bold;
             font-size: 1.5rem;
+        }
+    }
+    .arrowDown{
+        font-size: 2.3rem;
+        transition: 2s ease-in-out;
+        animation-name: floatDown;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+
+    @keyframes floatDown {
+        0%{
+            transform: translateY(0px);
+        }
+        50%{
+            
+            transform: translateY(-10px);
+        }
+        100%{
+            transform: translateY(0px);
         }
     }
 }
