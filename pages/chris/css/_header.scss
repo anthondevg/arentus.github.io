@@ -26,7 +26,7 @@
         background: transparent !important;
         border: 2px solid white !important;
         color: white !important;
-        font-weight: 800;
+        font-weight: 700;
         white-space: nowrap;
     }
 
@@ -219,7 +219,7 @@ $spacing-em-icon: 2.975em;
     background: transparent !important;
     border: 2px solid white !important;
     color: white !important;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .brand-msg {
@@ -277,7 +277,6 @@ $spacing-em-icon: 2.975em;
     display: -ms-flexbox;
     display: flex;
     font-size: 1em;
-    font-size: 900;
     -webkit-box-pack: justify;
     -ms-flex-pack: justify;
     justify-content: space-between;
@@ -308,7 +307,7 @@ $spacing-em-icon: 2.975em;
     p,
     span {
         font-size: 1em;
-        font-weight: 900;
+        font-weight: 700;
         color: base.$blue;
     }
 }
@@ -454,6 +453,7 @@ $spacing-em-icon: 2.975em;
         margin-bottom: 10px;
         padding: .7em;
         width: auto;
+        font-weight: 700;
         white-space: nowrap;
         margin-left: 0px !important;
     }

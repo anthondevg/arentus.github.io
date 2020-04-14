@@ -13,8 +13,7 @@
 @import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 /* color palette */
 b {
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 body {
@@ -29,11 +28,11 @@ body .hidden {
   overflow: hidden;
 }
 body p {
-  font-weight: normal;
+  font-weight: 550;
 }
 body a {
   color: #0a78b3;
-  font-weight: 700;
+  font-weight: 800;
 }
 body .fullbtn {
   width: 100%;
@@ -41,7 +40,7 @@ body .fullbtn {
 body .btn {
   border-radius: 0px;
   white-space: normal;
-  background: #dddddd;
+  background: #e9e9e9;
   border: none;
   font-weight: 800;
   border-radius: 0px;
@@ -78,11 +77,11 @@ body .yellow:hover {
   background-color: #d08815;
 }
 body .grey {
-  background: #dddddd;
+  background: #e9e9e9;
   color: black;
 }
 body .grey:hover {
-  background-color: #c4c4c4;
+  background-color: #d0d0d0;
 }
 body .darkgrey {
   background: #3c3c3c;
@@ -138,11 +137,10 @@ body .heading-presenter-wrapper span {
 body em {
   border-left: 0.5em solid #3c3c3c;
   font-style: normal;
-  background: #dddddd;
-  font-weight: 700;
+  background: #e9e9e9;
+  font-weight: 900;
   display: block;
   padding: 1em;
-  font-size: 1em;
   color: black;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -197,7 +195,7 @@ body .bold-text {
   background: transparent !important;
   border: 2px solid white !important;
   color: white !important;
-  font-weight: 700;
+  font-weight: 800;
   white-space: nowrap;
 }
 .main-header .row {
@@ -355,7 +353,7 @@ body .bold-text {
   background: transparent !important;
   border: 2px solid white !important;
   color: white !important;
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .brand-msg {
@@ -411,6 +409,7 @@ body .bold-text {
   display: -ms-flexbox;
   display: flex;
   font-size: 1em;
+  font-size: 900;
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
@@ -436,7 +435,7 @@ body .bold-text {
 .breadcrumb p,
 .breadcrumb span {
   font-size: 1em;
-  font-weight: 700;
+  font-weight: 900;
   color: #0a78b3;
 }
 
@@ -554,7 +553,6 @@ body .bold-text {
     margin-bottom: 10px;
     padding: 0.7em;
     width: auto;
-    font-weight: 700;
     white-space: nowrap;
     margin-left: 0px !important;
   }
@@ -823,7 +821,7 @@ body .bold-text {
   -webkit-box-align: baseline;
   -ms-flex-align: baseline;
   align-items: baseline;
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .footer-links {
@@ -874,7 +872,7 @@ body .bold-text {
 
 .footer-msg {
   font-size: 1.1em;
-  color: #dddddd;
+  color: #e9e9e9;
 }
 
 @media screen and (max-width: 980px) {
@@ -1023,10 +1021,6 @@ body .bold-text {
     border-bottom: none !important;
   }
 }
-.aside-list li:last-child {
-  border-bottom: none !important;
-}
-
 .aside-links {
   background: #f7f7f7;
   padding: 0.5em 1em;
@@ -1047,11 +1041,11 @@ body .bold-text {
   list-style-type: none;
 }
 .aside-links a {
-  font-size: 1em;
+  font-size: 0.9em;
 }
 .aside-links ul li {
-  padding: 0.5em 0em;
-  border-top: 1px solid #dddddd;
+  padding: 0.2em 0em;
+  border-top: 1px solid #e9e9e9;
   font-weight: 800;
 }
 .aside-links ul li a {
@@ -1063,15 +1057,16 @@ body .bold-text {
   padding-right: 10px;
 }
 .aside-links ul li:nth-last-child(1) {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #e9e9e9;
+  padding: 5px !important;
 }
 
 .aside-title {
-  font-weight: 700;
+  font-weight: 800;
 }
 
 .aside-subtitle {
-  font-weight: 800;
+  font-weight: 900;
   font-size: 1em;
   padding: 0;
   margin-bottom: 10px;
@@ -1082,7 +1077,7 @@ body .bold-text {
   width: 100%;
   font-size: 0.9em;
   display: block;
-  padding: 0.6em 0.8em;
+  padding: 0.4em 0.2em;
   margin-bottom: 5px;
   border: none;
   border-radius: 0px;
@@ -1095,7 +1090,7 @@ body .bold-text {
 }
 
 .bb-g {
-  border-bottom: 1px solid #dddddd;
+  border-bottom: 1px solid #e9e9e9;
 }
 
 .contact-us-wrapper p:nth-child(1) {
@@ -1111,12 +1106,12 @@ table {
   border-radius: 5px;
   border-style: hidden;
   /* hide standard table (collapsed) border */
-  box-shadow: 0 0 0 1px #dddddd;
+  box-shadow: 0 0 0 1px #e9e9e9;
   /* this draws the table border  */
 }
 
 .table {
-  border: 1px solid #dddddd;
+  border: 1px solid #e9e9e9;
 }
 .table thead {
   border-bottom: 5px solid #e45424 !important;
@@ -1138,8 +1133,7 @@ table {
 
 /* color palette */
 b {
-  font-size: 1rem;
-  font-weight: 800;
+  font-size: 1.1rem;
 }
 
 body {
@@ -1154,11 +1148,11 @@ body .hidden {
   overflow: hidden;
 }
 body p {
-  font-weight: normal;
+  font-weight: 550;
 }
 body a {
   color: #0a78b3;
-  font-weight: 700;
+  font-weight: 800;
 }
 body .fullbtn {
   width: 100%;
@@ -1166,7 +1160,7 @@ body .fullbtn {
 body .btn {
   border-radius: 0px;
   white-space: normal;
-  background: #dddddd;
+  background: #e9e9e9;
   border: none;
   font-weight: 800;
   border-radius: 0px;
@@ -1203,11 +1197,11 @@ body .yellow:hover {
   background-color: #d08815;
 }
 body .grey {
-  background: #dddddd;
+  background: #e9e9e9;
   color: black;
 }
 body .grey:hover {
-  background-color: #c4c4c4;
+  background-color: #d0d0d0;
 }
 body .darkgrey {
   background: #3c3c3c;
@@ -1263,11 +1257,10 @@ body .heading-presenter-wrapper span {
 body em {
   border-left: 0.5em solid #3c3c3c;
   font-style: normal;
-  background: #dddddd;
-  font-weight: 700;
+  background: #e9e9e9;
+  font-weight: 900;
   display: block;
   padding: 1em;
-  font-size: 1em;
   color: black;
   margin-bottom: 0.5em;
   margin-top: 0.5em;
@@ -1308,10 +1301,10 @@ body .bold-text {
   color: black;
 }
 .accordion .collapsed {
-  background: #dddddd;
+  background: #e9e9e9;
   color: black;
 }
 
 /**/
 
-/*# sourceMappingURL=output.css.map */
+/*# sourceMappingURL=styles.css.map */

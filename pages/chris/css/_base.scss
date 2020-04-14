@@ -18,7 +18,7 @@ $orange:            rgb(228, 84, 36);
 $blue:              rgb(10, 120, 179);
 $green:             rgb(88, 141, 50);
 $yellow:            rgb(234, 162, 46);
-$grey:              rgb(233, 233, 233);
+$grey:              rgb(221, 221, 221);
 $darkgrey:          rgb(60, 60, 60);
 
 $lightorange:       rgb(247, 220, 212);
@@ -32,6 +32,10 @@ $sspro:             'Open Sans', sans-serif;
 
 $darkorange:        saturate($orange, 20%);
 
+b {
+    font-size: 1rem;
+    font-weight: 800;
+}
 
 body {
     
@@ -47,12 +51,12 @@ body {
     }
 
     p {
-        font-weight: 550;
+        font-weight: normal;
     }
 
     a {
         color: $blue;
-        font-weight: 800;
+        font-weight: 700;
     }
 
     .fullbtn {
@@ -185,9 +189,10 @@ body {
         border-left: .5em solid $darkgrey;
         font-style: normal;
         background: $grey;
-        font-weight: 900;
+        font-weight: 700;
         display: block;
         padding: 1em;
+        font-size: 1em;
         color: black;
         margin-bottom: .5em;
         margin-top: .5em;

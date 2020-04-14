@@ -7,11 +7,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
     <link rel="stylesheet" href="css/output.css">
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css">
     <link rel="stylesheet" href="css/nav.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600;700;800&display=swap" rel="stylesheet">
     <title>Interior</title>
 </head>
 
@@ -24,7 +27,8 @@
                 <img class="img-fluid" src="learning_centre_assets/logo.svg" alt="eSolutionsGroup Centre Logo.">
             </a>
 
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
 
@@ -34,17 +38,21 @@
                     <form action="" class="header-input has-search">
                         <label for="search-bar" class="hidden">Search input</label>
 
-                        <input type="search" name="search" class="form-control search-bar searchInput" placeholder="What are you looking for?" aria-label="What are you looking for?" title="Enter search keywords" autocomplete="off">
+                        <input type="search" name="search" class="form-control search-bar searchInput"
+                            placeholder="What are you looking for?" aria-label="What are you looking for?"
+                            title="Enter search keywords" autocomplete="off">
 
                         <button aria-label="Search button" class="form-control search-button orange">Search</button>
 
                     </form>
 
-                    <button accesskey="m" aria-describedby="descriptionPopularTopicsMenu" class="popular-topics-button" onclick="openNav()">Popular Topics</button>
+                    <button accesskey="m" aria-describedby="descriptionPopularTopicsMenu" class="popular-topics-button"
+                        onclick="openNav()">Popular Topics</button>
 
 
                     <div id="descriptionPopularTopicsMenu" class="hidden">
-                        This will open the popular topics menu where you can go trough different sections of our website! Press ESCAPE Key if you want to close menu.
+                        This will open the popular topics menu where you can go trough different sections of our
+                        website! Press ESCAPE Key if you want to close menu.
                     </div>
 
                 </ul>
@@ -54,31 +62,33 @@
         </nav>
     </header>
 
-<nav id="mySidenav" class="sidenav" style="z-index: 99">
+    <nav id="mySidenav" class="sidenav" style="z-index: 99">
 
-    <div class="nav-control pt-5">
-        <div class="nav-desc" style="align-items: baseline;">
-            <span class="icon"><img class="img-fluid" src="learning_centre_assets/popular_topics_icon.svg" alt="Popular Topics Icon"></span>
+        <div class="nav-control pt-5">
+            <div class="nav-desc" style="align-items: baseline;">
+                <span class="icon"><img class="img-fluid" src="learning_centre_assets/popular_topics_icon.svg"
+                        alt="Popular Topics Icon"></span>
+            </div>
+
+            <p class="nav-title">Popular Topics</p>
+
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img
+                    src="learning_centre_assets/popular_topics_close.svg" alt=""></a>
         </div>
 
-        <p class="nav-title">Popular Topics</p>
+        <ul class="pt-3">
+            <li><a href="content.html">Search Engine Optimization</a></li>
+            <li><a href="">i:Create content and Page Management</a></li>
+            <li><a href="">Accessibility Compliance(AODA)</a></li>
+            <li><a href="">Guide to Writing for the Web</a></li>
+            <li><a href="">Lorem ipsum dolor</a></li>
 
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="learning_centre_assets/popular_topics_close.svg" alt=""></a>
-    </div>
+            <li><a href="">Consetetur Sadipscing</a></li>
 
-    <ul class="pt-3">
-        <li><a href="content.html">Search Engine Optimization</a></li>
-        <li><a href="">i:Create content and Page Management</a></li>
-        <li><a href="">Accessibility Compliance(AODA)</a></li>
-        <li><a href="">Guide to Writing for the Web</a></li>
-        <li><a href="">Lorem ipsum dolor</a></li>
+            <li><a href="">At: Vero Eos et Accusam</a></li>
+        </ul>
+    </nav>
 
-        <li><a href="">Consetetur Sadipscing</a></li>
-
-        <li><a href="">At: Vero Eos et Accusam</a></li>
-    </ul>
-</nav>
-   
     <div class="content-wrapper">
         <div class="container-fluid">
             <div class="row breadcrumb">
@@ -88,9 +98,12 @@
                 </nav>
 
                 <div class="controls">
-                    <span><a href=""><img width="20px" class="img-fluid" src="learning_centre_assets/interior_small_text.svg" alt=""></a></span>
-                    <span><a href=""><img width="20px" src="learning_centre_assets/interior_large_text.svg" alt=""></a></span>
-                    <span class="icon pl-1"><a href=""><img width="15px" src="learning_centre_assets/interior_print_icon.svg" alt=""></a></span>
+                    <span><a href=""><img width="20px" class="img-fluid"
+                                src="learning_centre_assets/interior_small_text.svg" alt=""></a></span>
+                    <span><a href=""><img width="20px" src="learning_centre_assets/interior_large_text.svg"
+                                alt=""></a></span>
+                    <span class="icon pl-1"><a href=""><img width="15px"
+                                src="learning_centre_assets/interior_print_icon.svg" alt=""></a></span>
                 </div>
             </div>
         </div>
@@ -101,10 +114,12 @@
                 <div class="col-md-3">
                     <div class="aside-links">
                         <h5 class="aside-title">Create a Custom Manual</h5>
-                        <p>You can add various pages from this website to build a custom manual, then download it as a PDF.</p>
+                        <p>You can add various pages from this website to build a custom manual, then download it as a
+                            PDF.</p>
 
 
-                        <a class="aside-btn" href="#"><i class="fas fa-plus pr-2 pl-2 pt-2 pb-2"></i>Add to My Download</a>
+                        <a class="aside-btn" href="#"><i class="fas fa-plus pr-2 pl-2 pt-2 pb-2"></i>Add to My
+                            Download</a>
 
                         <a class="aside-btn" href="#"><i class="fas fa-download pr-2 pl-2"></i>Download My Manual</a>
 
@@ -120,7 +135,7 @@
 
                         <p class="aside-subtitle">Social Media</p>
 
-                        <ul>
+                        <ul class="aside-list">
                             <li class="typed-link"><a href="">Example Sub page</a></li>
                             <li><a href="">Widget from External Site</a></li>
                         </ul>
@@ -135,19 +150,26 @@
                             <p>Main line: <a href="">519-884-2476</a></p>
 
                             <p>Toll-free: <a href="">1-866-691-5528</a></p>
-                            <p><a href="">Email-support</a></p>
+                            <p><a href="">Email Support</a></p>
                         </div>
 
-                        <a class="aside-btn text-center" href="#"><i class="far fa-envelope pr-2 pl-2"></i>Suscribe to this Page</a>
+                        <a class="aside-btn text-center" href="#"><i class="far fa-envelope pr-2 pl-2"></i>Subscribe to
+                            this Page</a>
                     </div>
                 </div>
 
                 <div class="col-md-9">
                     <h1 style="font-size: 29px">Social Media</h1>
 
-                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum natus velit excepturi iure officiis, itaque recusandae deleniti, perspiciatis culpa tenetur quasi ab repellat, labore qui, doloribus doloremque dolore non saepe. </b></p>
+                    <p><b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatum natus velit excepturi
+                            iure officiis, itaque recusandae deleniti, perspiciatis culpa tenetur quasi ab repellat,
+                            labore qui, doloribus doloremque dolore non saepe. </b></p>
 
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsa ratione dolores voluptate laborum necessitatibus molestiae sequi iste consectetur magnam fugit praesentium cumque quia commodi accusamus quaerat consequuntur repellat, sit! consectetur adipisicing elit. Voluptatum natus velit excepturi iure officiis, itaque recusandae deleniti, perspiciatis culpa tenetur quasi ab repellat, labore qui, doloribus doloremque dolore non saepe.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deleniti ipsa ratione dolores voluptate
+                        laborum necessitatibus molestiae sequi iste consectetur magnam fugit praesentium cumque quia
+                        commodi accusamus quaerat consequuntur repellat, sit! consectetur adipisicing elit. Voluptatum
+                        natus velit excepturi iure officiis, itaque recusandae deleniti, perspiciatis culpa tenetur
+                        quasi ab repellat, labore qui, doloribus doloremque dolore non saepe.</p>
 
 
                     <h3 class="mb-3 mt-5">Table Style</h3>
@@ -274,7 +296,9 @@
                             <h3 class="mb-3 mt-5">Blockquotes</h3>
 
                             <blockquote cite='http://html.conclase.net/w3c/html401...def-BLOCKQUOTE'>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptates nihil quia deletad sisd qwe qwert exrcitationte et placere do varulo rock you like a hurricane. </p>
+                                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Incidunt voluptates nihil
+                                    quia deletad sisd qwe qwert exrcitationte et placere do varulo rock you like a
+                                    hurricane. </p>
 
                                 <p class="author"> - Author name</p>
                             </blockquote>
@@ -319,7 +343,8 @@
                             <div class="row buttons">
 
                                 <div class="col-md-4 p-2">
-                                    <button aria-label="Orange Button label for accessible button" class="btn orange fullbtn">Orange Button</button>
+                                    <button aria-label="Orange Button label for accessible button"
+                                        class="btn orange fullbtn">Orange Button</button>
                                 </div>
 
                                 <div class="col-md-4 p-2">
@@ -365,7 +390,6 @@
                             text-decoration: none;
                             cursor: pointer;
                         }
-
                     </style>
 
                     <div class="row">
@@ -374,39 +398,68 @@
                         <div class="accordion col-md-11" id="accordionExample">
                             <div class="accordion-item" style="width: 100%">
 
-                                <div class="panel a-item" id="headingOne" data-toggle="collapse" toggle="collapse" href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                                <div class="panel a-item" id="headingOne" data-toggle="collapse" toggle="collapse"
+                                    href="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                     <h5>Lorem Ipsum</h5>
                                 </div>
 
 
-                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionExample">
+                                <div id="collapseOne" class="collapse show" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
 
                             <div class="accordion-item" style="width: 100%">
 
-                                <div class="panel a-item collapsed" id="headingTwo" data-toggle="collapse" toggle="collapse" href="#collapseTwo" aria-expanded="true" aria-controls="collapseTwo">
+                                <div class="panel a-item collapsed" id="headingTwo" data-toggle="collapse"
+                                    toggle="collapse" href="#collapseTwo" aria-expanded="true"
+                                    aria-controls="collapseTwo">
                                     <h5>Lorem Epsum</h5>
                                 </div>
 
-                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionExample">
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo"
+                                    data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
 
                             <div class="accordion-item " style="width: 100%">
-                                <div class="panel a-item collapsed" id="headingThree" data-toggle="collapse" toggle="collapse" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                                <div class="panel a-item collapsed" id="headingThree" data-toggle="collapse"
+                                    toggle="collapse" href="#collapseThree" aria-expanded="false"
+                                    aria-controls="collapseThree">
                                     <h5>Lorem Apsum</h5>
                                 </div>
 
-                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionExample">
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
                                     <div class="card-body">
-                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor, sunt aliqua put a bird on it squid single-origin coffee nulla assumenda shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo. Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt you probably haven't heard of them accusamus labore sustainable VHS.
+                                        Anim pariatur cliche reprehenderit, enim eiusmod high life accusamus terry
+                                        richardson ad squid. 3 wolf moon officia aute, non cupidatat skateboard dolor
+                                        brunch. Food truck quinoa nesciunt laborum eiusmod. Brunch 3 wolf moon tempor,
+                                        sunt aliqua put a bird on it squid single-origin coffee nulla assumenda
+                                        shoreditch et. Nihil anim keffiyeh helvetica, craft beer labore wes anderson
+                                        cred nesciunt sapiente ea proident. Ad vegan excepteur butcher vice lomo.
+                                        Leggings occaecat craft beer farm-to-table, raw denim aesthetic synth nesciunt
+                                        you probably haven't heard of them accusamus labore sustainable VHS.
                                     </div>
                                 </div>
                             </div>
@@ -420,7 +473,8 @@
                         <div class="col-md-6 col-sm-6 mb-3 col-lg-4 col-xl-3">
                             <a href="#">
                                 <div class="card hoverable-card feature-box">
-                                    <img src="https://picsum.photos/400/200" class="card-img-top overlay img-fluid" alt="...">
+                                    <img src="https://picsum.photos/400/200" class="card-img-top overlay img-fluid"
+                                        alt="...">
                                     <div class="card-body orange">
                                         <h3>Lorem</h3>
                                     </div>
@@ -432,7 +486,8 @@
                             <a href="https://www.youtube.com/watch?v=CGfKi6kpdTQ">
                                 <div class="card hoverable-card feature-box">
                                     <span class="badge"></span>
-                                    <img src="https://picsum.photos/00/200" class="card-img-top overlay img-fluid" alt="...">
+                                    <img src="https://picsum.photos/00/200" class="card-img-top overlay img-fluid"
+                                        alt="...">
                                     <div class="card-body yellow">
                                         <h3>Awesome CSS</h3>
                                     </div>
@@ -442,7 +497,8 @@
                         <div class="col-md-6 col-sm-6 mb-3 col-lg-4 col-xl-3">
                             <a class="card-a" href="">
                                 <div class="card hoverable-card feature-box">
-                                    <img src="https://picsum.photos/450/200" class="card-img-top overlay img-fluid" alt="...">
+                                    <img src="https://picsum.photos/450/200" class="card-img-top overlay img-fluid"
+                                        alt="...">
                                     <div class="card-body green">
                                         <h3>Lorem Apsum</h3>
                                     </div>
@@ -455,7 +511,8 @@
                                 <div class="card hoverable-card feature-box">
 
                                     <span class="badge-card"><i class="fas fa-link"></i></span>
-                                    <img src="https://picsum.photos/1000/200" class="card-img-top overlay img-fluid" alt="...">
+                                    <img src="https://picsum.photos/1000/200" class="card-img-top overlay img-fluid"
+                                        alt="...">
                                     <div class="card-body blue">
                                         <h3>Lorem Epsum</h3>
                                     </div>
@@ -492,10 +549,13 @@
 
                         <div class="col-md-6 col-sm-6 mb-3 col-lg-4 col-xl-3">
                             <div class="card hoverable-card feature-box">
-                                <img src="https://picsum.photos/400/200" class="card-img-top overlay img-fluid" alt="...">
+                                <img src="https://picsum.photos/400/200" class="card-img-top overlay img-fluid"
+                                    alt="...">
                                 <div class="card-body">
-                                    <h5>Call to Action Lorem ipsum dolor sit amet, consectetur adipisicing elit. Explicabo qui aut of.</h5>
-                                    <p class="card-text">Some quick example. Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet</p>
+                                    <h5>Call to Action Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                                        Explicabo qui aut of.</h5>
+                                    <p class="card-text">Some quick example. Lorem ipsum dolor sit amet Lorem ipsum
+                                        dolor sit amet</p>
 
                                     <a href="#" class="btn blue">Call to Action goes here a long text</a>
 
@@ -506,9 +566,11 @@
 
                         <div class="col-md-6 col-sm-6 mb-3 col-lg-4 col-xl-3">
                             <div class="card hoverable-card feature-box">
-                                <img src="https://picsum.photos/300/200" class="card-img-top overlay img-fluid" alt="...">
+                                <img src="https://picsum.photos/300/200" class="card-img-top overlay img-fluid"
+                                    alt="...">
                                 <div class="card-body">
-                                    <h5 class="card-title">Call to Action. Lorem ipsum dolor sit amet, consectetur adipi.</h5>
+                                    <h5 class="card-title">Call to Action. Lorem ipsum dolor sit amet, consectetur
+                                        adipi.</h5>
                                     <p class="card-text">Some quick example. Lorem ipsum dolor sit amet</p>
                                     <a href="#" class="btn blue">Link goes here</a>
 
@@ -532,7 +594,8 @@
 
                         <div class="col-md-6 col-sm-6 mb-3 col-lg-4 col-xl-3">
                             <div class="card feature-box hoverable-card:">
-                                <img src="https://picsum.photos/600/200" class="card-img-top overlay img-fluid" alt="...">
+                                <img src="https://picsum.photos/600/200" class="card-img-top overlay img-fluid"
+                                    alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title"><a href="">Call to Link</a></h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
@@ -561,7 +624,8 @@
                             <div class="card feature-box">
 
                                 <span class="badge-card">15 OFF%</span>
-                                <img src="https://picsum.photos/800/200" class="card-img-top overlay img-fluid" alt="...">
+                                <img src="https://picsum.photos/800/200" class="card-img-top overlay img-fluid"
+                                    alt="...">
                                 <div class="card-body">
                                     <h5 class="card-title">Card title</h5>
                                     <p class="card-text">Some quick example text to build on the card.</p>
@@ -617,16 +681,20 @@
                 </div>
                 <div class="col-md-2 col-sm-3">
                     <ul class="social-icons">
-                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i class="fab fa-facebook"></i></a></li>
-                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i class="fab fa-twitter"></i></a></li>
-                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i class="fab fa-linkedin"></i></a></li>
+                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i
+                                    class="fab fa-facebook"></i></a></li>
+                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i
+                                    class="fab fa-twitter"></i></a></li>
+                        <li><a style="color: black;" href="#" Target="_blank" class="social-icon"> <i
+                                    class="fab fa-linkedin"></i></a></li>
                     </ul>
                 </div>
 
             </div>
 
             <div class="col-12 pt-3 pb-3 d-flex flex-row-reverse">
-                <p class="footer-msg" style="color: darkgrey">Designed by eSolutionsGroup and Developed by <a href="https://arentus.github.io" Target="_blank">Robwert Mota</a> </p>
+                <p class="footer-msg" style="color: darkgrey">Designed by eSolutionsGroup and Developed by <a
+                        href="https://arentus.github.io" Target="_blank">Robwert Mota</a> </p>
             </div>
         </div>
     </footer>
@@ -636,11 +704,17 @@
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
 
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
 
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
 
