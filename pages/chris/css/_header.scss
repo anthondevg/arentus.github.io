@@ -140,7 +140,7 @@
     .searchInput {
         background-image: url('../learning_centre_assets/search_icon.svg');
         background-repeat: no-repeat;
-        height: 55px;
+        height: 50px;
         background-size: 24px 24px;
         background-position: left 20px center;
         padding: .33333rem .77778rem .33333rem 3.55556rem;
@@ -168,7 +168,7 @@
 
     .search-button {
         width: 20%;
-        font-size: .88em;
+        font-size: 1em;
         letter-spacing: .8px;
         font-weight: 700;
     }
@@ -220,6 +220,7 @@ $spacing-em-icon: 2.975em;
     border: 2px solid white !important;
     color: white !important;
     font-weight: 700;
+    cursor: pointer;
 }
 
 .brand-msg {
@@ -227,7 +228,7 @@ $spacing-em-icon: 2.975em;
     padding-top: 2rem;
     text-shadow: 0px 2px 0px rgb(33, 33, 33);
     font-size: 2.2vw;
-    font-weight: 800;
+    font-weight: 700;
     letter-spacing: .8px;
 }
 
