@@ -100,11 +100,17 @@ div.dropdown:hover div.dropdown-menu {
 }
 
 #linkHeader {
-  position: relative;
+  position: absolute;
+  left: 0;
+  top: 0;
   width: 300px;
   padding: 22px;
   margin: 0px;
   border-right: 2px solid black;
+}
+
+.headerWrapper {
+  height: 100vh;
 }
 
 #linkHeader::after {
