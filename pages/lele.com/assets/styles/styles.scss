@@ -143,3 +143,22 @@ div.dropdown:hover div.dropdown-menu {
     font-weight: 700;
     line-height: 2px;
 }
+
+// show / hide arrow fullHD
+
+.bigScreenArrow{
+    display: none;    
+}
+.normalScreenArrow{
+    display: none;
+}
+@media (max-width: 1800px){
+    .normalScreenArrow{
+        display: block;
+    }
+}
+@media (min-width: 1800px){
+    .bigScreenArrow{
+        display: block;    
+    }
+}

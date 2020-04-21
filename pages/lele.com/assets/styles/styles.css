@@ -129,4 +129,23 @@ div.dropdown:hover div.dropdown-menu {
   line-height: 2px;
 }
 
+.bigScreenArrow {
+  display: none;
+}
+
+.normalScreenArrow {
+  display: none;
+}
+
+@media (max-width: 1800px) {
+  .normalScreenArrow {
+    display: block;
+  }
+}
+@media (min-width: 1800px) {
+  .bigScreenArrow {
+    display: block;
+  }
+}
+
 /*# sourceMappingURL=styles.css.map */
