@@ -85,7 +85,7 @@ div.dropdown:hover div.dropdown-menu {
 
   div.cardWrap {
     background: rgba(232, 232, 232, 0.7);
-    padding-bottom: 20px;
+    padding-bottom: 0px;
     position: static;
     display: block;
   }
@@ -114,9 +114,9 @@ div.dropdown:hover div.dropdown-menu {
 .headerWrapper .row {
   height: 100%;
 }
-@media (max-width: 520px) {
+@media (max-width: 780px) {
   .headerWrapper {
-    transform: translateY(150px);
+    transform: translateY(180px);
   }
 }
 

@@ -98,7 +98,7 @@ div.dropdown:hover div.dropdown-menu {
 
     div.cardWrap {
         background: $contentBgColor;
-        padding-bottom: 20px;
+        padding-bottom: 0px;
         position: static;
         display: block;
     }
@@ -128,8 +128,8 @@ div.dropdown:hover div.dropdown-menu {
     .row{
         height: 100%;
     }
-    @media (max-width: 520px) {
-        transform: translateY(150px);
+    @media (max-width: 780px) {
+        transform: translateY(180px);
     }
 }   
 #linkHeader::after {
