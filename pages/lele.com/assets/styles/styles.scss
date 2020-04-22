@@ -1,5 +1,4 @@
 body {
-    height: 100vh;
     background-color: white;
     font-family: 'Montserrat', sans-serif;
 }
@@ -121,10 +120,18 @@ div.dropdown:hover div.dropdown-menu {
     padding: 22px;
     margin: 0px;
     border-right: 2px solid black;
+    
 }
+
 .headerWrapper{
     height: 100vh;
-}
+    .row{
+        height: 100%;
+    }
+    @media (max-width: 520px) {
+        transform: translateY(150px);
+    }
+}   
 #linkHeader::after {
     content: "";
     position: absolute;
