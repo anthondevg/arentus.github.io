@@ -116,6 +116,7 @@ div.dropdown:hover div.dropdown-menu {
 }
 @media (max-width: 780px) {
   .headerWrapper {
+    height: 100%;
     transform: translateY(180px);
   }
 }

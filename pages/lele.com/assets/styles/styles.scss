@@ -129,6 +129,7 @@ div.dropdown:hover div.dropdown-menu {
         height: 100%;
     }
     @media (max-width: 780px) {
+        height: 100%;
         transform: translateY(180px);
     }
 }   
