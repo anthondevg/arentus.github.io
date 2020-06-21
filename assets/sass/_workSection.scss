@@ -1,89 +1,73 @@
-
-.underBorderedTitle{
-    font-size: 3rem;
-    font-weight: 600;
+.button {
+  border-radius: 7px;
+  border: none;
+  padding: 10px 55px;
+  color: white;
+  display: inline-block;
+  font-weight: 500;
+  text-transform: uppercase;
 }
-.underBorderedTitle:after {
-    background: none repeat scroll 0 0 $primary-color;
-    bottom: -10px;
-    content: "";
-    display: block;
-    height: 15px;
-    position: relative;
-    width: 150px;
+.button:hover {
+  text-decoration: none;
+  color: white;
 }
-
-.button{
-    border-radius: 7px;
-    border: none;
-    padding: 10px 55px;
-    color: white;
-    display: inline-block;
-    font-weight: 500;
-    text-transform: uppercase;
+.bgGreen {
+  background-color: $primary-color;
+  transition: 0.3s;
 }
-.button:hover{
-    text-decoration: none;
-    color: white;
+.bgGreen:hover {
+  background-color: $secondary-color;
+  box-shadow: 0px 2px 7px #1b1b1b;
+  border-bottom: 4px solid $primary-color;
+  transform: translateY(-4px);
 }
-.bgGreen{
-    background-color: $primary-color;
-    transition: .3s;
-}
-.bgGreen:hover{
-    background-color: $secondary-color;
-    box-shadow: 0px 2px 7px #1b1b1b; 
-    border-bottom: 4px solid $primary-color;
-    transform: translateY(-4px);
-}
-.blackButton:hover{
-    color: white;
-    text-decoration: none;
-    text-decoration-line: none;
+.blackButton:hover {
+  color: white;
+  text-decoration: none;
+  text-decoration-line: none;
 }
 
-.projectList{
-    .projectTitle{
-        font-size: 2rem;
-        font-weight: bold;
-        line-height: 1em;
+.projectList {
+  .projectTitle {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1em;
+  }
+  .projectImage {
+    background: white;
+    box-shadow: 0 5px 4px rgba($color: #000000, $alpha: 0.4);
+    min-height: 250px;
+    min-width: 250px;
+    border-radius: 3px;
+    background-position: center;
+  }
+  .projectDescription {
+    padding: 3em 0em !important;
+    border-radius: 0 5px 5px 0;
+    transition: 0.5s;
+    @media (min-width: $screen-md) {
+      padding: 4em !important;
     }
-    .projectImage{
-        background: white;
-        box-shadow: 0 5px 4px rgba($color: #000000, $alpha: 0.4);
-        min-height: 250px;
-        min-width: 250px;
-        border-radius: 3px;
-        background-position: center;
+  }
+  .projectDescription:hover {
+  }
+
+  .skillsSet {
+    padding: 0;
+    margin: 0;
+    margin-left: -1 0px;
+    margin-bottom: 20px;
+    .skill {
+      border: 1px solid white;
+      border-radius: 100px;
+      display: inline-block;
+      margin: 1px;
+      font-size: 0.78rem;
+      padding: 3px 7px;
     }
-    .projectDescription{
-        padding: 3em 0em !important;
-        border-radius: 0 5px 5px 0;
-        transition: .5s;
-        @media (min-width: $screen-md) {
-            
-            padding: 4em !important;
-        }
-    }
-    .projectDescription:hover{
-    }
-    
-    .skillsSet{
-        padding: 0;
-        margin: 0;
-        margin-left: -1 0px;
-        margin-bottom: 20px;
-        .skill{
-            border: 1px solid white;
-            border-radius: 100px;
-            display: inline-block;
-            margin: 1px;
-            font-size: .78rem;
-            padding: 3px 7px;
-        }
-    }
+  }
 }
 
-.three-dots{
-    font-size: 10rem;
+.three-dots {
+  font-size: 10rem;
 }

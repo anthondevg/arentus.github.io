@@ -1,155 +1,172 @@
-@import 'base.scss';
-@import 'settings.scss';
+// to compile styles use
+// sass --watch styles.scss ../css/styles.css
 
-@import 'header.scss';
-@import 'nav.scss';
+@import "base.scss";
+@import "settings.scss";
 
-@import 'infoSection.scss';
-@import 'workSection.scss';
-@import 'skillSection.scss';
+@import "header.scss";
+@import "nav.scss";
 
-@import 'footer.scss';
+@import "infoSection.scss";
+@import "workSection.scss";
+@import "skillSection.scss";
+
+@import "contact.scss";
+@import "circleSuccess";
+@import "footer.scss";
 
 body {
-    background: $black;
-    color: white;
-    font-family: $default-font;
+  background: $black;
+  color: white;
+  font-family: $default-font;
 }
 
 // cursor styles
 
 .container {
-    padding: 4rem;
+  padding: 4rem;
 }
 
 .cursor {
-    pointer-events: none;
-    // hide in mobile
-    display: none;
+  pointer-events: none;
+  // hide in mobile
+  display: none;
 
-    @media (min-width: $screen-md) {
-        display: block;
+  @media (min-width: $screen-md) {
+    display: block;
+  }
+
+  &__ball {
+    position: absolute;
+    top: 0;
+    left: 0;
+    mix-blend-mode: difference;
+    z-index: 9999999;
+
+    circle {
+      fill: #f7f8fa;
     }
-
-    &__ball {
-        position: absolute;
-        top: 0;
-        left: 0;
-        mix-blend-mode: difference;
-        z-index: 9999999;
-
-        circle {
-            fill: #f7f8fa;
-        }
-    }
+  }
 }
 
 .element {
-    transform: translateY(var(--translateY));
-    will-change: translateY;
-    transition: .1s;
-
+  transform: translateY(var(--translateY));
+  will-change: translateY;
+  transition: 0.1s;
 }
 
 .imagesCollage {
-    position: relative;
+  position: relative;
 }
 
 .frontWork {
-    width: 50%;
-    position: absolute;
-    right: 20px;
-    top: 0px;
-    z-index: 1;
+  width: 50%;
+  position: absolute;
+  right: 20px;
+  top: 0px;
+  z-index: 1;
 }
 
 .backWork {
-    width: 100%;
-    margin: 0 auto;
-    z-index: -1;
-    transition: .2s;
+  width: 100%;
+  margin: 0 auto;
+  z-index: -1;
+  transition: 0.2s;
 
-    &:hover {
-        filter: grayscale(0) !important;
-    }
+  &:hover {
+    filter: grayscale(0) !important;
+  }
 }
 
 .wrapperShapes {
-    position: relative;
+  position: relative;
 }
 
 .middleSphereRight {
-    position: absolute;
-    right: 0px;
-    top: 50%;
-    z-index: -1;
+  position: absolute;
+  right: 0px;
+  top: 50%;
+  z-index: -1;
 }
 
 .middleSphereLeft {
-    position: absolute;
-    left: 0px;
-    top: 50%;
-    z-index: -1;
+  position: absolute;
+  left: 0px;
+  top: 50%;
+  z-index: -1;
 }
 
 .bottomShapeLeft {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: -2;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -2;
 }
 
 .hideMobile {
-    display: none;
+  display: none;
 
-    @media (min-width: $screen-md) {
-        display: block;
-    }
+  @media (min-width: $screen-md) {
+    display: block;
+  }
 }
 
 .hideDesktop {
-    display: block;
+  display: block;
 
-    @media (min-width: $screen-md) {
-        display: none;
-    }
+  @media (min-width: $screen-md) {
+    display: none;
+  }
 }
 
-
 .bottomSphereRight {
-    position: absolute;
-    right: 0px;
-    bottom: 0;
-    z-index: -1;
-
+  position: absolute;
+  right: 0px;
+  bottom: 0;
+  z-index: -1;
 }
 
 .squareRight {
-    position: absolute;
-    left: 0px;
-    bottom: 0px;
-    z-index: -1;
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
 }
 
 .linearGradient {
-    background: linear-gradient(180deg, #0D3292 0%, #2374ED 100%);
+  background: linear-gradient(180deg, #0d3292 0%, #2374ed 100%);
 }
 
 .linearGradientAlt {
-    background: linear-gradient(180deg, $primary-color 0%, $secondary-color 50%);
+  background: linear-gradient(180deg, $primary-color 0%, $secondary-color 50%);
 }
 
 .linearGradientBlack {
-    background: linear-gradient(180deg, #171717 13.99%, #0F0F0F 97.48%);
+  background: linear-gradient(180deg, #171717 13.99%, #0f0f0f 97.48%);
 }
 
 .no-margin {
-    margin: 0;
+  margin: 0;
 }
 
 .no-padding {
-    padding: 0;
+  padding: 0;
 }
-.bigTitle{
-    font-size: 1.5rem;
+.bigTitle {
+  font-size: 1.5rem;
+}
+
+.underBorderedTitle {
+  font-size: 3rem;
+  font-weight: 600;
+}
+
+.underBorderedTitle:after {
+  background: none repeat scroll 0 0 $primary-color;
+  bottom: -10px;
+  content: "";
+  display: block;
+  height: 15px;
+  position: relative;
+  width: 150px;
 }
