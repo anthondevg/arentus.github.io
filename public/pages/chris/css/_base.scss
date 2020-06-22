@@ -1,0 +1,227 @@
+/*
+    author: @Robwert Mota
+    start date: 20/11/2019
+
+*/
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+// MIN WIDTH VALUES
+$screen-jumbo:               1600px;
+$screen-xl:                  1400px;
+$screen-lg:                  1200px;
+$screen-md:                  992px;
+$screen-sm:                  768px;
+$screen-xs:                  480px;
+
+/* color palette */
+$orange:            rgb(228, 84, 36);
+$blue:              rgb(10, 120, 179);
+$green:             rgb(88, 141, 50);
+$yellow:            rgb(234, 162, 46);
+$grey:              rgb(221, 221, 221);
+$darkgrey:          rgb(60, 60, 60);
+
+$lightorange:       rgb(247, 220, 212);
+$lightyellow:       rgb(251, 236, 213);
+$lightgreen:        rgb(227, 240, 217);
+$lightblue:         rgb(204, 236, 240);
+
+$blue-btn:          rgb(1,162,182);
+
+$sspro:             'Open Sans', sans-serif;
+
+$darkorange:        saturate($orange, 20%);
+
+b {
+    font-size: 1rem;
+    font-weight: 800;
+}
+
+body {
+    
+    font-family: $sspro;
+
+    .hidden {
+        position: absolute;
+        left: -10000px;
+        top: auto;
+        width: 1px;
+        height: 1px;
+        overflow: hidden;
+    }
+
+    p {
+        font-weight: normal;
+    }
+
+    a {
+        color: $blue;
+        font-weight: 700;
+    }
+
+    .fullbtn {
+        width: 100%;
+    }
+
+    .btn {
+        border-radius: 0px;
+        white-space: normal;
+        background: $grey;
+        border: none;
+        font-weight: 800;
+        border-radius: 0px;
+        color: black;
+        transition: all ease .1s;
+    }
+
+    .orange {
+        background: $orange;
+        color: white;
+        border-color: $orange;
+    }
+
+    .orange:hover {
+        background-color: darken($orange, 10%);
+    }
+
+
+    .blue {
+        background: $blue-btn;
+        color: white;
+    }
+
+    .blue:hover {
+        background-color: darken($blue, 10%);
+    }
+
+    .green {
+        background: $green;
+        color: white;
+    }
+
+    .green:hover {
+        background-color: darken($green, 10%);
+    }
+
+    .yellow {
+        background: $yellow;
+        color: black;
+    }
+
+    .yellow:hover {
+        background-color: darken($yellow, 10%);
+    }
+
+    .grey {
+        background: $grey;
+        color: black;
+    }
+
+    .grey:hover {
+        background-color: darken($grey, 10%);
+    }
+
+    .darkgrey {
+        background: $darkgrey;
+        color: white;
+    }
+
+    .darkgrey:hover {
+        background-color: darken($darkgrey, 10%);
+    }
+
+    h1 {
+        font-size: 39px;
+        font-weight: 800;
+    }
+
+    h2 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    h3 {
+        font-size: 27px;
+        font-weight: 700;
+    }
+
+    h4 {
+        font-size: 24px;
+        font-weight: 700;
+    }
+
+    h5 {
+        font-size: 21px;
+        font-weight: 700;
+    }
+
+    h6 {
+        font-size: 18px;
+        font-weight: 700;
+    }
+
+    blockquote {
+        border-left: .5em solid $orange;
+        padding-left: .99em;
+        padding-top: 0em;
+        padding-bottom: 0em;
+        font-weight: bold !important;
+
+        p {
+
+            font-weight: normal;
+            line-height: 1.4em;
+        }
+        .author {
+            font-weight: 800;
+        }
+    }
+
+    .heading-presenter-wrapper {
+        padding: .8em 0em;
+
+        span {
+            color: $darkgrey;
+        }
+    }
+
+    em {
+        border-left: .5em solid $darkgrey;
+        font-style: normal;
+        background: $grey;
+        font-weight: 700;
+        display: block;
+        padding: 1em;
+        font-size: 1em;
+        color: black;
+        margin-bottom: .5em;
+        margin-top: .5em;
+    }
+
+    .em-orange {
+        background-color: $lightorange;
+        border-left-color: $orange !important;
+    }
+
+    .em-yellow {
+        background-color: $lightyellow;
+        border-left-color: $yellow !important;
+    }
+
+    .em-green {
+        background-color: $lightgreen;
+        border-left-color: $green !important;
+    }
+
+    .em-blue {
+        background-color: $lightblue;
+        border-left-color: $blue !important;
+    }
+    
+    .content-title{
+        font-size: 29px;
+    }
+    .bold-text{
+        font-weight: 800;
+    }
+}

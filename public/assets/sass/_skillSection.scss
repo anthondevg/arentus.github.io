@@ -1,0 +1,195 @@
+.skillsPresentation{
+    padding-left: 000px;
+    padding-right: 000px;
+    .skillMsg{
+        font-size: 12vw;
+        text-align: center;
+        @media (min-width: $screen-md){
+            font-size: 5vw;
+            text-align: left;
+        }
+        font-weight: 800;
+    }
+}
+
+.skillsSection{
+    display: flex;
+    justify-content: center;
+
+    p {
+        padding-top: 5px;
+    }
+    .wrapperSkill{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        flex-direction: column;
+        margin-bottom: 55px;
+        padding: 20px;
+        height: 100px;
+        width: 100px;
+        border: 0px solid white;
+        @media (min-width: $screen-md){
+            border: 0px solid white;
+        }
+    }
+
+    .html5:hover{
+        border-color: #EC6231;
+        .skillIcon{
+            color: #EC6231;
+        }
+        p{
+            
+            color: #EC6231;
+        }
+    }
+
+    .css3:hover{
+        border-color: #2965f1
+
+        ;
+        .skillIcon{
+            color: #2965f1;
+        }
+        p{
+            
+            color: #2965f1;
+        }
+    }
+    .js:hover{
+        border-color: #F0DB4F;
+        .skillIcon{
+            color: #F0DB4F;
+        }
+        p{
+            
+            color: #F0DB4F;
+        }
+    }
+    .bootstrap:hover{
+        border-color: #553C7B;
+        .skillIcon{
+            color: #553C7B;
+        }
+        p{  
+            color: #553C7B;
+        }
+    }
+    .react:hover{
+        border-color: #61DBFB;
+        .skillIcon{
+            color: #61DBFB;
+        }
+        p{  
+            color: #61DBFB;
+        }
+    }
+    .laravel:hover{
+        border-color: #F05340;
+        .skillIcon{
+            color: #F05340;
+        }
+        p{  
+            color: #F05340;
+        }
+    }
+    .vue:hover{
+        border-color: #41B883;
+        .skillIcon{
+            color: #41B883;
+        }
+        p{  
+            color: #41B883;
+        }
+        
+    }
+    .nodejs:hover{
+        border-color: #3C873A;
+        .skillIcon{
+            color: #3C873A;
+        }
+        p{  
+            color: #3C873A;
+        }
+    }
+    .npm:hover{
+        border-color: #CC3534;
+        .skillIcon{
+            color: #CC3534;
+        }
+        p{  
+            color: #CC3534;
+        }
+    }
+    .git:hover{
+        border-color: rgb(241, 81, 53);
+        .skillIcon{
+            color: rgb(241, 81, 53);
+        }
+        p{  
+            color: rgb(241, 81, 53);
+        }
+    }
+
+    .github:hover{
+        border-color: rgb(27, 27, 27);
+        .skillIcon{
+            color: rgb(27, 27, 27);
+        }
+        p{  
+            color: rgb(27, 27, 27);
+        }
+    }
+    .stripe:hover{
+        border-color: rgb(50, 50, 93);
+        .skillIcon{
+            color: rgb(50, 50, 93);
+        }
+        p{  
+            color: rgb(50, 50, 93);
+        }
+    }
+    .skillIcon{ 
+        text-align: center;
+        font-size: 3em;
+    }
+    .skillTitle{
+        padding: 5px;
+        text-align: center;
+        font-size: 1rem;
+    }
+}
+
+#bSISS{
+    position: absolute;
+    top: 250px;
+    left: 120px;
+
+    @media (min-width: $screen-md){
+        top: 20px;
+        left: 120px;
+    }
+    z-index: -1;
+    animation-name: floatBouncing;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+    -moz-animation-name: floatBouncing;
+    -moz-animation-duration: 4s;
+    -moz-animation-iteration-count: infinite;
+}
+
+@keyframes floatBouncing {
+
+    0% {
+        transform: translate(60px,-80px);
+    }
+    50% {
+        transform: translate(30px,0px);
+        
+    }
+    100% {
+        transform: translate(60px,-80px);
+    }
+}

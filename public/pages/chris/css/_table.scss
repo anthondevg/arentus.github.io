@@ -1,0 +1,46 @@
+@use 'base';
+
+table {
+    border-collapse: collapse;
+    border-radius: 5px;
+    border-style: hidden;
+    /* hide standard table (collapsed) border */
+    box-shadow: 0 0 0 1px base.$grey;
+    /* this draws the table border  */
+}
+
+.table {
+
+    border: 1px solid base.$grey;
+
+    thead {
+        border-bottom: 5px solid base.$orange !important;
+
+        th {
+            border: none;
+        }
+
+    }
+
+    thead:after {
+        content: "";
+        border-bottom: 10px solid base.$orange !important;
+    }
+
+    tbody {
+
+        tr:nth-child(odd) {
+            background-color: whitesmoke;
+        }
+    }
+
+    tfoot {
+        tr {
+            background: base.$orange;
+            color: white;
+        }
+    }
+
+}
+
+

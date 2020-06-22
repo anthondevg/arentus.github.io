@@ -1,0 +1,65 @@
+
+.brandsSection {
+    background-color: #F4F4F4;
+    color: black;
+    position: relative;
+    @media (max-width: $screen-md){
+        border-radius: 0px 0px 100px 100px;
+    }
+    .brandsTitleWrapper {
+        position: absolute;
+        height: 100px;
+        left: 50%;
+        // styles for mobile
+        @media (max-width: $screen-md){
+            left: 0;
+            height: 0;
+        }
+        h3 
+        {
+            text-transform: uppercase;
+            position: relative;
+            top: -30px;
+            background-color: $primary-color;
+            left: -50%;
+            color: white;
+            font-size: 2rem;
+            width: 100%;
+            font-weight: 700;
+            padding: 20px 100px ;
+            text-align: center;
+            box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            // styles for mobile
+            @media (max-width: $screen-md){
+                position: relative;
+                left: 20px;
+                display: inline-block;
+                top: -30px;
+                font-size: 1.6rem;
+                width: 100%;
+                padding: 20px 20px;
+            }
+        }
+    }
+}
+
+.partnersRow{
+    position: relative;
+    z-index: 1;
+    .partner{
+        display: flex;
+        justify-content: center;
+        text-align: center;
+        i{
+            font-size: 4rem;
+            margin: 20px;
+            color: #242424;
+        }
+    }
+}
+
+.svgDeco1{
+    position: absolute;
+    bottom: 0;
+    z-index: 0;
+}

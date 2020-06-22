@@ -1,0 +1,24 @@
+[
+    {
+        location: "Quinta Científica Industrial de Venezuela",
+        coords: {
+            lat: 10.4681835,
+            long: -66.9351486
+        },
+        address: "Quinta Científica Industrial de Venezuela, No. 12 Avenida Gamboa, Caracas 1011, Distrito Capital, Venezuela",
+        schedule: "8AM-5PM",
+        gmap_address: "https://www.google.com/maps/place/Cientifica+Industrial+de+Venezuela,+C.A./@10.5089908,-66.9007864,15z/data=!4m2!3m1!1s0x0:0xad947a547629112b?sa=X&ved=2ahUKEwjm2tDBsuLlAhWExFkKHUT-Cu4Q_BIwGXoECA4QCA",
+        phone: "0426-3454224"
+            },
+    {
+        location: "Laboratorio Heiga",
+        coords: {
+            lat: 10.5078611,
+            long: -66.9003885
+        },
+        address: "Laboratorio Heiga",
+        schedule: "8AM-3PM",
+        gmap_address: "https://www.google.com/maps/place/Laboratorios+Heiga/@10.5078611,-66.9003885,14.75z/data=!4m12!1m6!3m5!1s0x0:0xad947a547629112b!2sCientifica+Industrial+de+Venezuela,+C.A.!8m2!3d10.5089908!4d-66.9007864!3m4!1s0x0:0xae18b3504b69aba7!8m2!3d10.5143694!4d-66.8931663",
+        phone: "0412-3454222"
+            },
+        ]

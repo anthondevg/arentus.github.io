@@ -1,0 +1,34 @@
+$navPadding: 15px;
+
+.nav{
+    position: absolute;
+
+    @media (max-width: $screen-sm){
+        position: static;
+    }
+
+    padding: 0;
+    margin: 0;
+    height: 70px;
+    background-color: rgba($color: $altBlack, $alpha: 0.8);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    font-size: 1.5rem;
+    font-weight: bold;
+    z-index: 99;
+    .logo{
+        padding: $navPadding;
+        a{
+            color: white;
+        }
+    }
+    .loginButton{
+        background-color: $primary-color;
+        padding: $navPadding 30px;
+        border-left: 0px solid white;
+        a{
+            color: white;
+        }
+    }
+}

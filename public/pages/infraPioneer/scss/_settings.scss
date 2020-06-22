@@ -1,0 +1,31 @@
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+    /* _settings.scss */
+    /* 
+        @author: Robwert Mota
+        @website: DevCore
+    */
+
+    // File to set color scheme, breakpoints, font-sizes, font-family, etc. */
+
+    /* COLOR SCHEME ---  */
+/* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
+
+//*~ Variables for color Scheme
+
+$primary-color: #006AFE;
+$altBlack: #151515;
+$black: #1B1B1B;
+
+$StandardGrey: #2B2B2B;
+//*~ Breakpoints min-widths
+
+$screen-jumbo:               1600px;
+$screen-xl:                  1400px;
+$screen-lg:                  1200px;
+$screen-md:                  992px;
+$screen-sm:                  768px;
+$screen-xs:                  480px;
+
+// Fonts
+
+$primary-font: 'Montserrat', sans-serif;

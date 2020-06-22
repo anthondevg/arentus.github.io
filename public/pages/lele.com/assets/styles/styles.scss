@@ -1,0 +1,176 @@
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+$radiusBtn: 18px;
+$btnBgColor: rgb(217, 217, 217);
+$contentBgColor: rgba(232, 232, 232, 0.7);
+.btn-success{
+    background-color: #008037;
+}
+.card {
+    border: none;
+    background: none;
+
+    .cardWrap {
+        background: none;
+        height: 100%;
+        border-radius: $radiusBtn $radiusBtn 0 0;
+    }
+
+    .cardContent {
+        background-color: $contentBgColor;
+        border-radius: 0 0 $radiusBtn $radiusBtn;
+        transition: 2s;
+        display: none;
+        text-align: center;
+        justify-content: center;
+        width: 100%;
+
+        ul {
+            margin: 0;
+            padding: 1em 2em;
+            padding-bottom: 2em;
+            width: 100%;
+        }
+
+        li {
+            list-style-type: none;
+        }
+    }
+
+    .cardTitle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        border-radius: $radiusBtn;
+        padding: 1.5em 1em;
+        background: $btnBgColor;
+        transition: .4s ease-in-out;
+
+        h2 {
+            font-size: 1.5em;
+        }
+
+        p {
+            padding: 0;
+            margin: 0;
+        }
+    }
+
+    .cardWrap:hover {
+        background-color: rgb(200, 200, 200);
+    }
+
+    .dropdown-menu {
+        width: 100%;
+        border: none;
+        padding: 0;
+        margin: 0;
+        transition: 2s ease-out;
+    }
+
+}
+
+div.dropdown:hover div.dropdown-menu {
+    display: flex;
+}
+
+.card:hover div.cardWrap {
+    background: $contentBgColor;
+    padding-bottom: 0px;
+}
+
+@media (max-width: 730px) {
+
+    div.card {
+        margin-bottom: 20px;
+    }
+
+    div.dropdown-menu {
+        position: static;
+        display: block;
+        padding: 0;
+        margin: 0;
+    }
+
+    div.cardWrap {
+        background: $contentBgColor;
+        padding-bottom: 0px;
+        position: static;
+        display: block;
+    }
+}
+
+.bottomShapeLeft {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    z-index: -1;
+}
+
+#linkHeader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 300px;
+    padding: 22px;
+    margin: 0px;
+    border-right: 2px solid black;
+    
+}
+
+.headerWrapper{
+    height: 100vh;
+    .row{
+        height: 100%;
+    }
+    @media (max-width: 780px) {
+        height: 100%;
+        transform: translateY(180px);
+    }
+}   
+#linkHeader::after {
+    content: "";
+    position: absolute;
+    bottom: 10px;
+    left: -10px;
+    right: -10px;
+    border-top: 2px solid black;
+}
+
+.domain {
+
+    font-size: 1.3rem;
+    color: black;
+    line-height: 2px;
+}
+
+.sub {
+    font-size: 2rem;
+    color: #008037;
+    font-weight: 700;
+    line-height: 2px;
+}
+
+// show / hide arrow fullHD
+
+.bigScreenArrow{
+    display: none;    
+}
+.normalScreenArrow{
+    display: none;
+}
+@media (max-width: 1800px){
+    .normalScreenArrow{
+        display: block;
+    }
+}
+@media (min-width: 1800px){
+    .bigScreenArrow{
+        display: block;    
+    }
+}

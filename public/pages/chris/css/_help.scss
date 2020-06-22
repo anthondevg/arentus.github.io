@@ -1,0 +1,115 @@
+@use 'base';
+/**/
+
+.help-section {
+    background: rgb(51, 51, 51);
+    color: white;
+    padding: 3rem 6rem;
+
+    .help-div {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        font-weight: 400;
+
+        .title {
+            font-size: 40px;
+            font-weight: 300;
+        }
+
+        .sub-text {
+            font-size: 16px;
+            font-weight: normal;
+        }
+    }
+}
+
+.contact-info {
+    padding: 1em 5em 2em 2em;
+    font-size: 1em;
+
+    h2 {
+        font-weight: 300 !important;
+    }
+
+    .icon {
+        padding-right: .6em;
+        font-size: 1.5rem;
+        font-weight: 400;
+    }
+
+    div a {
+        font-size: 20px;
+        font-weight: normal;
+        color: white;
+    }
+
+    div {
+        padding-right: 20px;
+        border-right: 1px solid grey;
+    }
+
+    div:nth-last-child(1) {
+        border-right: none;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .help-section {
+        padding: 2rem;
+    }
+
+    .contact-info {
+        padding: 0;
+        font-size: 1em;
+        text-align: justify;
+
+        .icon {
+            padding-right: 20px;
+            font-size: 1.5rem;
+            font-weight: 400;
+        }
+
+        div a {
+            color: white;
+            white-space: nowrap;
+        }
+
+        div {
+            padding: 1em .2em;
+            margin: 0;
+            text-align: justify-all;
+        }
+
+        div:nth-child(1) {
+            border-right: 1px solid grey;
+
+        }
+
+        div:nth-child(2) {
+            border: none;
+        }
+
+        div:nth-last-child(1) {
+            border-right: none;
+        }
+
+    }
+}
+
+@media screen and (max-width: 425px) {
+    .help-section {}
+
+    .contact-info {
+        padding: 0;
+
+        div {
+            background: base.$darkgrey;
+            padding: 1.2em;
+            margin-bottom: 5px;
+            border-right: none !important;
+            border-bottom: none !important;
+        }
+    }
+}

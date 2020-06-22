@@ -1,0 +1,107 @@
+@use 'base';
+
+.features-wrapper {
+    padding-top: 3em;
+    padding-left: 10vw;
+    padding-right: 10vw;
+    padding-bottom: 3em;
+
+    .grid-element {
+        .icon {
+            color: base.$orange;
+            font-size: 1.7em;
+            font-weight: 400;
+
+            img {
+                width: 14%;
+                margin-bottom: 12px;
+            }
+        }
+
+        h2 {
+            color: rgb(11, 127, 188);
+            font-weight: 800;
+            font-size: 19px;
+
+            a {
+                color: rgb(11, 127, 188);
+            }
+            
+            // just for external links
+            a[target="_blank"]:after {
+                content: '\f35d';
+                transition: all .25s;
+                font-size: .7em;
+                font-family: 'Font Awesome 5 Free';
+                font-weight: 900;
+                margin-left: 7px;
+                display: inline;
+            }
+        }
+
+        p {
+            font-size: 1em;
+        }
+    }
+
+    .grid-element {
+        padding: 20px;
+        border-right: 2px solid rgba(233, 233, 233, 0.5);
+        box-shadow: 0px 24px 1px -24px base.$darkgrey;
+    }
+
+    .grid-element:nth-last-child(1) {
+        border-right: none;
+    }
+
+    .nb-bottom {
+        box-shadow: none !important;
+    }
+
+}
+
+.content-wrapper {
+    padding: 1vw 8vw;
+}
+
+@media screen and (max-width: 1720px) {
+    .features-wrapper {
+        .grid-element:nth-child(3n) {
+            border-right: none;
+        }
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .features-wrapper {
+        .grid-element {
+            text-align: center;
+            padding: 20px;
+            border-right: 2px solid rgba(233, 233, 233, 0.5);
+            box-shadow: 0px 24px 1px -24px base.$darkgrey;
+        }
+
+        .grid-element:nth-child(3n) {
+            border-right: 2px solid rgba(233, 233, 233, 0.5);
+        }
+
+        .grid-element:nth-child(2n) {
+            border-right: none;
+        }
+
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .grid-element {
+        border-right: none !important;
+    }
+
+    .features-wrapper {
+        padding-top: 3em;
+        padding-left: 3vw;
+        padding-right: 3vw;
+        padding-bottom: 3em;
+    }
+}

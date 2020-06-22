@@ -1,0 +1,31 @@
+ $.each(json, function(index, value) {
+            console.log(value);
+            $('#addresses-wrapper').append(`<!-- ADDRESS ROW --> <div class='row'> <div class='col-7 address-wrapper'> <button data-toggle='modal' data-target='#exampleModalCenter2' class='address-box'> <p>${value.location}</p> </button> </div> <div class='col-5'> <div class='row distance-detail'> <!-- walker icon --> <div class='col-6 walker-wrapper'> <div> <img height='50px' width='50px' class='img-fluid walker-icon' src='walker.png' alt='walker' /> </div> <div> ... </div> </div> <!-- distance --> <div class='col-6'> <p>1.22 km</p> </div> </div> </div> </div>`);
+
+        });
+        
+         <!--<div class="row">
+            <div class="col-7 address-wrapper">
+
+                <button class="address-box ">
+                    <p>Titan</p>
+                </button>
+
+            </div>
+
+            <div class="col-5">
+                <div class="row distance-detail">
+
+                    <!-- walker icon -->
+                    <div class="col-6 walker-wrapper">
+
+                    </div>
+
+                    <!-- distance -->
+                    <div class="col-6">
+                        <p>5.3 km</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        -->

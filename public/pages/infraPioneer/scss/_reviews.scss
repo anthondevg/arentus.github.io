@@ -1,0 +1,79 @@
+.reviewsSection {
+  margin-top: 120px;
+
+  .reviewsTitle {
+    i {
+      font-size: 3rem;
+    }
+
+    .checkCircle {
+      background-color: $primary-color;
+      padding: 20px;
+      border-radius: 100px;
+      box-shadow: 0px 10px 5px #151515;
+    }
+
+    h2 {
+      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+      font-size: 3rem;
+    }
+  }
+
+  // review component
+
+  .photoReview {
+    border-radius: 1000px;
+    height: 130px;
+    width: 130px;
+  }
+
+
+}
+
+
+// !!!!!!
+
+.swiper-container {
+  width: 100%;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.swiper-slide {
+  background-position: center;
+  background-size: cover;
+  width: 380px;
+  background-color: $black;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.picture {
+  width: 100%;
+  height: 320px;
+  overflow: hidden;
+
+  img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+}
+
+.detail {
+  padding: 25px 20px;
+  font-weight: 600;
+  text-align: center;
+
+  h3 {
+    margin: 0;
+    font-size: 20px;
+  }
+
+  span {
+    font-style: normal;
+    font-weight: normal;
+    color: rgb(184, 184, 184);
+  }
+}

@@ -1,0 +1,245 @@
+.h-wrapper {
+    height: 100vh;
+    background: url('../img/code.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+
+    &:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        background: linear-gradient(119.11deg, rgba(18, 197, 91, 0.91) 10.18%, rgba(13, 50, 146, 0.96) 90.78%);z-index: 1;
+        width: 100%;
+        height: 100vh;
+    }
+}
+
+.socialFeed {
+    position: absolute;
+    bottom: 20px;
+    z-index: 3;
+
+    .list {
+        z-index: 3;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+
+        a {
+            color: white;
+            i {
+                padding: 10px;
+                font-size: 1.5em;
+            }
+            &:hover{
+                color: $primary-color;
+            }
+            
+        }
+
+        
+    }
+}
+
+.h-row {
+    z-index: 2;
+
+    .h-titles {
+        z-index: 3;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    $stroke-color: whitesmoke;
+
+    .h-title {
+        max-width: 600px;
+    }
+
+    .Strokeme {
+        color: black;
+        font-weight: 800;
+        text-shadow:
+            -1px -1px 0 $stroke-color,
+            1px -1px 0 $stroke-color,
+            -1px 1px 0 $stroke-color,
+            1px 1px 0 $stroke-color;
+        font-size: 900;
+        font-size: 4rem;
+    }
+
+    @supports((text-stroke: 2px $stroke-color) or (-webkit-text-stroke: 2px black)) {
+        .Strokeme {
+            color: transparent;
+            -webkit-text-stroke: 1px $stroke-color;
+            text-stroke: 1px $stroke-color;
+            text-shadow: none;
+        }
+    }
+
+    .Subtitle {
+
+        font-weight: lighter;
+        color: whitesmoke;
+        font-weight: 100;
+        font-size: 1.5em;
+        letter-spacing: -1px;
+    }
+}
+
+
+
+.vl {
+    z-index: 9;
+    border-left: 3px solid white;
+    height: 100%;
+    position: absolute;
+    right: 15%;
+    margin-left: 0px;
+    top: 0;
+    display: none;
+
+    @media (min-width: $screen-md) {
+        display: block;
+    }
+
+    .vlinks {
+        position: absolute;
+        background-color: whitesmoke;
+        bottom: 80px;
+        width: 100%;
+
+        .vlink {
+            color: white;
+            padding: 7px;
+            text-decoration-line: none;
+            float: left;
+            transform: rotate(90deg);
+            transform-origin: 25% 0%;
+            white-space: nowrap;
+            text-transform: uppercase;
+        }
+    }
+
+
+}
+
+// animated wave styles
+
+body {
+    overflow-x: hidden;
+}
+
+
+.scrollbar {
+    margin-left: 30px;
+    float: left;
+    height: 300px;
+    width: 65px;
+    background: #F5F5F5;
+    overflow-y: scroll;
+    margin-bottom: 25px;
+}
+
+.force-overflow {
+    min-height: 450px;
+}
+ 
+// !!!!!!
+
+.bubbles {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	transform: translateZ(0);
+}
+
+.bubbles li {
+	position: absolute;
+	list-style: none;
+	display: block;
+	background-color: rgba(231, 237, 245, 0.15);
+	top: -100px;
+	animation: circle 15s infinite;
+	transition-timing-function: linear;
+}
+
+.bubbles li:nth-child(1) {
+	width: 40px;
+	height: 40px;
+	left: 20%;
+}
+
+.bubbles li:nth-child(2) {
+	width: 60px;
+	height: 60px;
+	left: 40%;
+	animation-delay: 2s;
+	animation-duration: 16s;
+}
+
+.bubbles li:nth-child(3) {
+	width: 30px;
+	height: 30px;
+	left: 60%;
+	animation-delay: 4s;
+	animation-duration: 13s;
+}
+
+.bubbles li:nth-child(4) {
+	width: 80px;
+	height: 80px;
+	left: 80%;
+	animation-delay: 1s;
+	animation-duration: 19s;
+}
+
+.bubbles li:nth-child(5) {
+	width: 50px;
+	height: 50px;
+	left: 50%;
+	animation-delay: 5s;
+	animation-duration: 12s;
+}
+
+.bubbles li:nth-child(6) {
+	width: 25px;
+	height: 25px;
+	left: 10%;
+	animation-delay: 3s;
+	animation-duration: 11s;
+}
+
+.bubbles li:nth-child(7) {
+	width: 55px;
+	height: 55px;
+	left: 70%;
+	animation-delay: 2.5s;
+	animation-duration: 11s;
+}
+
+.bubbles li:nth-child(8) {
+	width: 75px;
+	height: 75px;
+	left: 30%;
+	animation-delay: 3.5s;
+	animation-duration: 11s;
+}
+
+@keyframes circle {
+	0% {
+		-webkit-transform: translateY(0);
+		transform: translateY(0);
+	}
+	100% {
+		-webkit-transform: translateY(1080px) rotate(800deg);
+		transform: translateY(1080px) rotate(800deg);
+	}
+}

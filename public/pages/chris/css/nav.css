@@ -1,0 +1,172 @@
+/* prefixed by https://autoprefixer.github.io (PostCSS: v7.0.23, autoprefixer: v9.7.3) */
+/*/*/
+/*//*/
+/* The side navigation menu */
+/* The side navigation menu */
+.sidenav {
+    height: 100%;
+    /* 100% Full-height */
+    width: 0;
+    /* 0 width - change this with JavaScript */
+    position: fixed;
+    /* Stay in place */
+    z-index: 1;
+    /* Stay on top */
+    top: 0;
+    /* Stay at the top */
+    right: 0;
+    
+    background: rgb(51, 51, 51);
+    color: white;
+    /* Black*/
+    overflow-x: hidden;
+    -ms-overflow-x: hidden;
+    -ms-overflow-style: -ms-autohiding-scrollbar;
+    /* Disable horizontal scroll 
+    /* Place content 60px from the top */
+    transition: .3s ease-in-out;
+    /* 0.5 second transition effect to slide in the sidenav */
+    
+}
+.sidenav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.sidenav ul li a {
+    color: white;
+    font-weight: 100;
+    white-space: nowrap;
+}
+
+.sidenav ul li:nth-child(1) {
+    padding-top: 15px;
+}
+/* The navigation menu links */
+.sidenav a {
+    padding: 8px 0px 8px 0px;
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    transition: 0.1s;
+}
+
+
+
+/* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+#main {
+    transition: margin-left .5s;
+    padding: 20px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidenav {
+        padding-top: 15px;
+    }
+
+    .sidenav a {
+        font-size: 18px;
+    }
+}
+
+
+/*///*/
+
+.nav-control {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+    border-bottom: 1px solid rgb(99, 99, 99);
+    padding-bottom: 20px !important;
+}
+
+.nav-desc {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: baseline;
+    -ms-flex-align: baseline;
+    align-items: baseline;
+}
+
+.nav-title {
+    font-size: 1.3em;
+    margin: 0;
+    font-weight: 600;
+    line-height: 20px;
+    white-space: nowrap;
+}
+
+.side-nav ul {
+    padding: 0;
+    list-style-type: none;
+}
+
+.side-nav ul li a {
+    color: white;
+    font-weight: 100;
+}
+
+.side-nav ul li:nth-child(1) {
+    padding-top: 15px;
+}
+
+.side-nav ul li {
+    padding-bottom: 7px;
+    -webkit-transition: all ease 2s;
+    -o-transition: all ease 2s;
+    transition: all ease 2s;
+    line-height: 31px;
+    white-space: nowrap;
+}
+
+.side-nav ul li a:hover {
+    color: grey;
+    -webkit-text-decoration-line: none;
+    text-decoration-line: none;
+}
+
+.icon-nav {
+    font-size: 2em;
+}
+
+.close-btn {
+    background: transparent;
+    color: white;
+    border: none;
+    font-size: 2em;
+    -webkit-transition: all ease .2s;
+    -o-transition: all ease .2s;
+    transition: all ease .2s;
+}
+
+.close-btn:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
+    transform: scale(1.1);
+    text-shadow: 0px 2px 4px rgb(33, 33, 33);
+    cursor: pointer;
+}
+
+.close-btn:active {
+
+    -webkit-transform: scale(1);
+
+    -ms-transform: scale(1);
+
+    transform: scale(1);
+}
+
+.close-btn:active {
+    outline: none;
+}

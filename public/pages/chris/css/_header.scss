@@ -1,0 +1,553 @@
+@use 'base';
+
+.main-header {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    padding: 10vw;
+    padding-top: 8vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+    background: url('../learning_centre_assets/homepagebanner_dark.png');
+    background-size: cover;
+    position: relative;
+
+    .popular-topics-button-home {
+        -webkit-box-flex: 2;
+        -ms-flex-positive: 2;
+        flex-grow: 2;
+        margin-left: 10px;
+        background: transparent !important;
+        border: 2px solid white !important;
+        color: white !important;
+        font-weight: 700;
+        white-space: nowrap;
+    }
+
+    .row {
+        z-index: 2;
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    /*What news : collectdigital ... */
+    .header-news {
+        position: absolute;
+        bottom: 0;
+        color: white;
+        width: 100%;
+        text-align: center;
+        background: rgba(33, 33, 33, 0.5);
+        z-index: 2;
+
+        span {
+            color: base.$orange;
+        }
+
+        p {
+            padding: 10px;
+            margin: 0;
+            margin-bottom: 0px;
+        }
+
+    }
+
+}
+
+
+.nav-search {
+    padding: 1.5vw 8vw;
+    z-index: 3;
+    width: 100%;
+
+    .navbar-nav {
+        width: 100%;
+
+        form {
+            min-width: 80%;
+        }
+    }
+}
+
+.overlay {
+    position: relative;
+}
+
+.overlay:after {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: .9;
+    background: rgba(33, 33, 33, 0.1);
+    z-index: 0;
+}
+
+.header-input {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+
+    .wrapper-i-search {
+
+
+        @media (min-width: base.$screen-xs) {}
+
+        @media (min-width: base.$screen-sm) {
+            width: 80%;
+        }
+
+        @media (min-width: base.$screen-md) {
+            width: 75%;
+        }
+
+        @media (min-width: base.$screen-lg) {
+            width: 85%;
+        }
+
+        @media (min-width: base.$screen-xl) {}
+
+    }
+
+    .search-bar {
+        font-size: .9em;
+        border: none;
+        width: 100%;
+        padding: 1em;
+        color: black;
+    }
+
+    .searchBox {
+        height: 52px;
+    }
+
+    .searchInput {
+        background-image: url('../learning_centre_assets/search_icon.svg');
+        background-repeat: no-repeat;
+        height: 50px;
+        background-size: 24px 24px;
+        background-position: left 20px center;
+        padding: .33333rem .77778rem .33333rem 3.55556rem;
+    }
+
+    .search-bar::-webkit-input-placeholder {
+        color: black;
+    }
+
+    .search-bar::-moz-placeholder {
+        color: black;
+    }
+
+    .search-bar:-ms-input-placeholder {
+        color: black;
+    }
+
+    .search-bar::-ms-input-placeholder {
+        color: black;
+    }
+
+    .search-bar::placeholder {
+        color: black;
+    }
+
+    .search-button {
+        width: 20%;
+        font-size: 1em;
+        letter-spacing: .8px;
+        font-weight: 700;
+    }
+
+    .search-button:hover {
+        cursor: pointer;
+        background-color: saturate(base.$orange, 15%);
+        border-color: saturate(base.$orange, 15%);
+    }
+
+    .search-button:active,
+    .search-button:focus {
+
+        -webkit-box-shadow: none;
+
+        box-shadow: none;
+        background-color: saturate(base.$orange, 15%);
+        border-color: saturate(base.$orange, 15%);
+        color: white;
+    }
+
+    .form-control {
+        border-radius: 0px;
+    }
+
+
+}
+
+$spacing-em-icon: 2.975em;
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: $spacing-em-icon;
+    height: $spacing-em-icon;
+    line-height: $spacing-em-icon;
+    text-align: center;
+    pointer-events: none;
+    color: black;
+}
+
+.popular-topics-button {
+    -webkit-box-flex: 2;
+    -ms-flex-positive: 2;
+    flex-grow: 2;
+    margin-left: 10px;
+    background: transparent !important;
+    border: 2px solid white !important;
+    color: white !important;
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.brand-msg {
+    color: white;
+    padding-top: 2rem;
+    text-shadow: 0px 2px 0px rgb(33, 33, 33);
+    font-size: 2.2vw;
+    font-weight: 700;
+    letter-spacing: .8px;
+}
+
+
+/**/
+.welcome-section {
+    background: rgb(247, 247, 247);
+    text-align: center;
+    padding-top: 1.5vw;
+    padding-bottom: 2vw;
+    padding-left: 15vw;
+    padding-right: 15vw;
+
+}
+
+/* content.html */
+.features-content {
+    padding-left: 0em !important;
+    padding-right: 0em !important;
+    padding-top: 2em !important;
+    padding-bottom: 2em !important;
+}
+
+.header-content {
+    position: relative;
+    height: 50vh;
+    background: url('../learning_centre_assets/interior_banner.png');
+    background-position: 100%;
+    background-size: cover;
+    padding: 0 !important;
+}
+
+.search-fixed-bar {
+    z-index: 5;
+    top: 0;
+    position: fixed;
+    background: rgba(22, 22, 23, .9);
+}
+
+.search-block-bar {
+    background: rgb(51, 51, 51);
+}
+
+.breadcrumb {
+    background: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    font-size: 1em;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+
+    .breadcrumb-links {
+        a {
+            -webkit-transition: all ease .5s;
+            -o-transition: all ease .5s;
+            transition: all ease .5s;
+        }
+
+        a:hover {
+            -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+        }
+
+        a:after {
+            font-weight: 300;
+            content: " / ";
+            padding-left: 10px;
+            padding-right: 10px;
+            color: black;
+            -webkit-text-decoration-line: none;
+            text-decoration-line: none;
+        }
+    }
+
+    p,
+    span {
+        font-size: 1em;
+        font-weight: 700;
+        color: base.$blue;
+    }
+}
+
+.controls {
+    a {
+        padding-left: 5px;
+        padding-right: 5px;
+        color: black;
+
+        img {
+            max-width: 50px;
+            max-width: 50px;
+        }
+
+    }
+
+}
+
+.welcome-title {
+    font-size: 29px;
+}
+
+
+@media screen and (max-width: 768px) {
+    /*scroll down animation only in tablets and mobiles*/
+    .scroll-down {
+        position: absolute;
+        left: 50%;
+        bottom: 70px;
+        display: block;
+        text-align: center;
+        font-size: 20px;
+        z-index: 100;
+        text-decoration: none;
+        text-shadow: 0;
+        width: 20px;
+        height: 20px;
+        border-bottom: 2px solid #fff;
+        border-right: 2px solid #fff;
+        z-index: 9;
+        left: 50%;
+        -webkit-transform: translate(-50%, 0%) rotate(45deg);
+        -moz-transform: translate(-50%, 0%) rotate(45deg);
+        transform: translate(-50%, 0%) rotate(45deg);
+        -webkit-animation: fade_move_down 2s ease-in-out infinite;
+        -moz-animation: fade_move_down 2s ease-in-out infinite;
+        animation: fade_move_down 2s ease-in-out infinite;
+    }
+
+
+    /*animated scroll arrow animation*/
+    @-webkit-keyframes fade_move_down {
+        0% {
+            -webkit-transform: translate(0, -10px) rotate(45deg);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            -webkit-transform: translate(0, 10px) rotate(45deg);
+            opacity: 0;
+        }
+    }
+
+    @-moz-keyframes fade_move_down {
+        0% {
+            -moz-transform: translate(0, -10px) rotate(45deg);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            -moz-transform: translate(0, 10px) rotate(45deg);
+            opacity: 0;
+        }
+    }
+
+    @keyframes fade_move_down {
+        0% {
+            transform: translate(0, -10px) rotate(45deg);
+            opacity: 0;
+        }
+
+        50% {
+            opacity: 1;
+        }
+
+        100% {
+            transform: translate(0, 10px) rotate(45deg);
+            opacity: 0;
+        }
+    }
+
+    // responsive view tablet and mobile
+    .header-input {
+
+        -webkit-box-orient: vertical;
+
+        -webkit-box-direction: normal;
+
+        -ms-flex-direction: column;
+
+        flex-direction: column;
+
+        .wrapper-i-search {
+            width: 100%;
+            margin-bottom: 10px;
+        }
+
+        .search-bar {
+            min-width: 70%;
+        }
+
+        .search-button {
+            min-width: 30% !important;
+            display: block;
+        }
+
+        .popular-topics-button-home {
+            display: block;
+            margin-left: 0px;
+            width: 80%;
+            text-align: center;
+            margin: auto;
+        }
+    }
+
+    .nav-search {
+        .navbar-collapse {
+            padding-top: 15px;
+        }
+    }
+
+    .popular-topics-button {
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: .7em;
+        width: auto;
+        font-weight: 700;
+        white-space: nowrap;
+        margin-left: 0px !important;
+    }
+
+    .nav-logo {
+        width: 150px;
+    }
+
+    .header-content {
+        position: relative;
+        height: 50vh;
+        background: url('../learning_centre_assets/interior_banner.png');
+        background-position: 100%;
+        background-size: cover;
+        padding: 0 !important;
+    }
+
+    $spacing-em-mobile-icon: 2.925rem;
+
+    .has-search .search-bar {
+        padding-left: $spacing-em-mobile-icon;
+    }
+
+    .has-search .form-control-feedback {
+        position: absolute;
+        z-index: 2;
+        display: block;
+        width: $spacing-em-mobile-icon;
+        height: $spacing-em-mobile-icon;
+        line-height: $spacing-em-mobile-icon;
+        text-align: center;
+        pointer-events: none;
+        color: black;
+    }
+
+    .main-header {
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        align-items: center;
+        height: 80vh;
+        background-size: cover;
+        background-attachment: fixed;
+        position: relative;
+
+        .header-news {
+            position: absolute;
+            bottom: 0;
+            color: white;
+            width: 100%;
+            text-align: center;
+            background: rgba(33, 33, 33, 0.5);
+
+            span {
+                color: base.$orange;
+            }
+
+            p {
+                padding: 6px;
+                margin: 0;
+                margin-bottom: 0px;
+                letter-spacing: .5px;
+            }
+        }
+
+        .search-button {
+            width: 30%;
+        }
+
+    }
+
+    .popular-topics-button-mobile {
+        display: block;
+        margin: 10px;
+        padding: .6em 1em;
+    }
+
+    .brand-msg {
+        color: white;
+        padding-top: 0rem;
+        text-shadow: 0px 1px 0px rgb(33, 33, 33);
+        font-size: 1rem;
+    }
+
+    .header-news {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: .8rem;
+    }
+
+}
