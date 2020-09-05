@@ -47,6 +47,7 @@ p {
 .hp {
   background: url("img/story/16.png");
   background-attachment: fixed;
+  background-position: center center;
   height: 100vh;
   color: white;
   background-size: cover;
@@ -60,11 +61,10 @@ p {
   text-align: center;
 }
 .storyImage {
-  width: 600px;
   font-weight: bold;
 }
 .fullwidth {
-  width: 100% !im;
+  width: 100% !important;
 }
 .canvas {
   z-index: 7;
