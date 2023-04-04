@@ -8,9 +8,4 @@ Made with Vanilla JS, HTML, CSS3
 
 ---
 
-## Usage:
-```javascript
-var fa = require("fontawesome");
-console.log(fa("fort-awesome") + " Hello World!"); // Hello World!
-console.log(fa.fortAwesome + " Hello World!"); // Hello World!
-```
+You can contact me at robwert1997@gmail.com
