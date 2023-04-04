@@ -13,6 +13,7 @@
   background-attachment: fixed;
   z-index: -1;
 }
+
 .h-wrapper:after {
   content: "";
   position: absolute;
@@ -29,19 +30,23 @@
   bottom: 20px;
   z-index: 3;
 }
+
 .socialFeed .list {
   z-index: 3;
   width: 100vw;
   display: flex;
   justify-content: center;
 }
+
 .socialFeed .list a {
   color: white;
 }
+
 .socialFeed .list a i {
   padding: 10px;
   font-size: 1.5em;
 }
+
 .socialFeed .list a:hover {
   color: #058c42;
 }
@@ -49,6 +54,7 @@
 .h-row {
   z-index: 2;
 }
+
 .h-row .h-titles {
   z-index: 3;
   height: 100vh;
@@ -57,24 +63,18 @@
   align-items: center;
   flex-direction: column;
 }
+
 .h-row .h-title {
   max-width: 600px;
 }
+
 .h-row .Strokeme {
-  color: black;
+  color: whitesmoke;
   font-weight: 800;
-  text-shadow: -1px -1px 0 whitesmoke, 1px -1px 0 whitesmoke, -1px 1px 0 whitesmoke, 1px 1px 0 whitesmoke;
   font-size: 900;
-  font-size: 4rem;
+  font-size: 3.8rem;
 }
-@supports (text-stroke: 2px whitesmoke) or (-webkit-text-stroke: 2px black) {
-  .h-row .Strokeme {
-    color: transparent;
-    -webkit-text-stroke: 1px whitesmoke;
-    text-stroke: 1px whitesmoke;
-    text-shadow: none;
-  }
-}
+
 .h-row .Subtitle {
   font-weight: lighter;
   color: whitesmoke;
@@ -93,17 +93,20 @@
   top: 0;
   display: none;
 }
+
 @media (min-width: 992px) {
   .vl {
     display: block;
   }
 }
+
 .vl .vlinks {
   position: absolute;
   background-color: whitesmoke;
   bottom: 80px;
   width: 100%;
 }
+
 .vl .vlinks .vlink {
   color: white;
   padding: 7px;
@@ -219,11 +222,13 @@ body {
     -webkit-transform: translateY(0);
     transform: translateY(0);
   }
+
   100% {
     -webkit-transform: translateY(1080px) rotate(800deg);
     transform: translateY(1080px) rotate(800deg);
   }
 }
+
 /** styles for navbar */
 .nav {
   width: 100%;
@@ -235,16 +240,19 @@ body {
   margin: 0;
   padding: 0;
 }
+
 @media (min-width: 992px) {
   .nav {
     border-bottom: none;
   }
 }
+
 .nav .logo {
   float: left;
   width: auto;
   height: auto;
 }
+
 .nav .logo a {
   text-decoration: none;
   color: white;
@@ -253,12 +261,15 @@ body {
   letter-spacing: 2px;
   color: white;
 }
+
 .nav .logo a:hover {
   color: whitesmoke;
 }
+
 .nav .main_list {
   float: right;
 }
+
 .nav .main_list ul {
   width: 100%;
   height: 80px;
@@ -267,12 +278,14 @@ body {
   margin: 0;
   padding: 0;
 }
+
 .nav .main_list ul li {
   width: auto;
   height: 80px;
   padding: 0;
   padding-right: 1rem;
 }
+
 .nav .main_list ul li a {
   text-decoration: none;
   color: white;
@@ -291,18 +304,22 @@ body {
   background-color: white;
   padding: 0;
 }
+
 .affix .logo {
   float: left;
   width: auto;
   height: auto;
 }
+
 .affix .logo a {
   text-decoration: none;
   font-size: 2rem;
 }
+
 .affix .logo a:hover {
   color: black;
 }
+
 .affix .navTrigger i {
   background-color: black;
   mix-blend-mode: difference;
@@ -321,6 +338,7 @@ body {
     border-bottom: 1px solid black;
   }
 }
+
 @media screen and (max-width: 2768px) {
   .navTrigger {
     display: block;
@@ -384,6 +402,7 @@ body {
     display: block;
   }
 }
+
 /* Animation */
 /* Inspiration taken from Dicson https://codemyui.com/simple-hamburger-menu-x-mark-animation/ */
 .navTrigger {
@@ -462,122 +481,154 @@ body {
   50% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(45deg);
   }
 }
+
 @keyframes inM {
   50% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(45deg);
   }
 }
+
 @-webkit-keyframes outM {
   50% {
     -webkit-transform: rotate(0deg);
   }
+
   100% {
     -webkit-transform: rotate(45deg);
   }
 }
+
 @keyframes outM {
   50% {
     transform: rotate(0deg);
   }
+
   100% {
     transform: rotate(45deg);
   }
 }
+
 @-webkit-keyframes inT {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(9px) rotate(135deg);
   }
 }
+
 @keyframes inT {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     transform: translateY(9px) rotate(135deg);
   }
 }
+
 @-webkit-keyframes outT {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(9px) rotate(135deg);
   }
 }
+
 @keyframes outT {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(9px) rotate(0deg);
   }
+
   100% {
     transform: translateY(9px) rotate(135deg);
   }
 }
+
 @-webkit-keyframes inBtm {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(-9px) rotate(135deg);
   }
 }
+
 @keyframes inBtm {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     transform: translateY(-9px) rotate(135deg);
   }
 }
+
 @-webkit-keyframes outBtm {
   0% {
     -webkit-transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     -webkit-transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     -webkit-transform: translateY(-9px) rotate(135deg);
   }
 }
+
 @keyframes outBtm {
   0% {
     transform: translateY(0px) rotate(0deg);
   }
+
   50% {
     transform: translateY(-9px) rotate(0deg);
   }
+
   100% {
     transform: translateY(-9px) rotate(135deg);
   }
 }
+
 .infoSection .circleLogo {
   font-size: 3rem;
   padding: 5px;
@@ -588,21 +639,26 @@ body {
   text-align: center;
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.2);
 }
+
 .infoSection .infoBox {
   margin-bottom: 50px;
 }
+
 @media (min-width: 768px) {
   .infoSection .infoBox {
     margin-bottom: 0px;
   }
 }
+
 .infoSection .outlinedCircle {
   background-color: transparent;
   border: 2px solid #0D3292;
 }
+
 .infoSection .outlinedCircle i {
   color: white;
 }
+
 .infoSection .coverLetter {
   font-weight: 600 !important;
 }
@@ -618,6 +674,7 @@ body {
   font-weight: 600;
   font-size: 8vw;
 }
+
 @media (min-width: 992px) {
   .roleBoard .roleTitle {
     font-size: 3.5vw;
@@ -680,42 +737,52 @@ body {
   from {
     -webkit-transform: rotate(360deg);
   }
+
   to {
     -webkit-transform: rotate(0);
   }
 }
+
 @-moz-keyframes rotate {
   from {
     -moz-transform: rotate(360deg);
   }
+
   to {
     -moz-transform: rotate(0);
   }
 }
+
 @-ms-keyframes rotate {
   from {
     -ms-transform: rotate(360deg);
   }
+
   to {
     -ms-transform: rotate(0);
   }
 }
+
 @-o-keyframes rotate {
   from {
     -o-transform: rotate(360deg);
   }
+
   to {
     -o-transform: rotate(0);
   }
 }
+
 @keyframes rotate {
   from {
     transform: rotate(360deg);
   }
+
   to {
     transform: rotate(0);
   }
 }
+
 .button {
   border-radius: 7px;
   border: none;
@@ -754,6 +821,7 @@ body {
   font-weight: bold;
   line-height: 1em;
 }
+
 .projectList .projectImage {
   background: white;
   box-shadow: 0 5px 4px rgba(0, 0, 0, 0.4);
@@ -762,22 +830,26 @@ body {
   border-radius: 3px;
   background-position: center;
 }
+
 .projectList .projectDescription {
   padding: 3em 0em !important;
   border-radius: 0 5px 5px 0;
   transition: 0.5s;
 }
+
 @media (min-width: 992px) {
   .projectList .projectDescription {
     padding: 4em !important;
   }
 }
+
 .projectList .skillsSet {
   padding: 0;
   margin: 0;
   margin-left: -1 0px;
   margin-bottom: 20px;
 }
+
 .projectList .skillsSet .skill {
   border: 1px solid white;
   border-radius: 100px;
@@ -795,11 +867,13 @@ body {
   padding-left: 0px;
   padding-right: 0px;
 }
+
 .skillsPresentation .skillMsg {
   font-size: 12vw;
   text-align: center;
   font-weight: 800;
 }
+
 @media (min-width: 992px) {
   .skillsPresentation .skillMsg {
     font-size: 5vw;
@@ -811,9 +885,11 @@ body {
   display: flex;
   justify-content: center;
 }
+
 .skillsSection p {
   padding-top: 5px;
 }
+
 .skillsSection .wrapperSkill {
   display: flex;
   justify-content: center;
@@ -826,123 +902,162 @@ body {
   width: 100px;
   border: 0px solid white;
 }
+
 @media (min-width: 992px) {
   .skillsSection .wrapperSkill {
     border: 0px solid white;
   }
 }
+
 .skillsSection .html5:hover {
   border-color: #EC6231;
 }
+
 .skillsSection .html5:hover .skillIcon {
   color: #EC6231;
 }
+
 .skillsSection .html5:hover p {
   color: #EC6231;
 }
+
 .skillsSection .css3:hover {
   border-color: #2965f1;
 }
+
 .skillsSection .css3:hover .skillIcon {
   color: #2965f1;
 }
+
 .skillsSection .css3:hover p {
   color: #2965f1;
 }
+
 .skillsSection .js:hover {
   border-color: #F0DB4F;
 }
+
 .skillsSection .js:hover .skillIcon {
   color: #F0DB4F;
 }
+
 .skillsSection .js:hover p {
   color: #F0DB4F;
 }
+
 .skillsSection .bootstrap:hover {
   border-color: #553C7B;
 }
+
 .skillsSection .bootstrap:hover .skillIcon {
   color: #553C7B;
 }
+
 .skillsSection .bootstrap:hover p {
   color: #553C7B;
 }
+
 .skillsSection .react:hover {
   border-color: #61DBFB;
 }
+
 .skillsSection .react:hover .skillIcon {
   color: #61DBFB;
 }
+
 .skillsSection .react:hover p {
   color: #61DBFB;
 }
+
 .skillsSection .laravel:hover {
   border-color: #F05340;
 }
+
 .skillsSection .laravel:hover .skillIcon {
   color: #F05340;
 }
+
 .skillsSection .laravel:hover p {
   color: #F05340;
 }
+
 .skillsSection .vue:hover {
   border-color: #41B883;
 }
+
 .skillsSection .vue:hover .skillIcon {
   color: #41B883;
 }
+
 .skillsSection .vue:hover p {
   color: #41B883;
 }
+
 .skillsSection .nodejs:hover {
   border-color: #3C873A;
 }
+
 .skillsSection .nodejs:hover .skillIcon {
   color: #3C873A;
 }
+
 .skillsSection .nodejs:hover p {
   color: #3C873A;
 }
+
 .skillsSection .npm:hover {
   border-color: #CC3534;
 }
+
 .skillsSection .npm:hover .skillIcon {
   color: #CC3534;
 }
+
 .skillsSection .npm:hover p {
   color: #CC3534;
 }
+
 .skillsSection .git:hover {
   border-color: #f15135;
 }
+
 .skillsSection .git:hover .skillIcon {
   color: #f15135;
 }
+
 .skillsSection .git:hover p {
   color: #f15135;
 }
+
 .skillsSection .github:hover {
   border-color: #1b1b1b;
 }
+
 .skillsSection .github:hover .skillIcon {
   color: #1b1b1b;
 }
+
 .skillsSection .github:hover p {
   color: #1b1b1b;
 }
+
 .skillsSection .stripe:hover {
   border-color: #32325d;
 }
+
 .skillsSection .stripe:hover .skillIcon {
   color: #32325d;
 }
+
 .skillsSection .stripe:hover p {
   color: #32325d;
 }
+
 .skillsSection .skillIcon {
   text-align: center;
   font-size: 3em;
 }
+
 .skillsSection .skillTitle {
   padding: 5px;
   text-align: center;
@@ -961,6 +1076,7 @@ body {
   -moz-animation-duration: 4s;
   -moz-animation-iteration-count: infinite;
 }
+
 @media (min-width: 992px) {
   #bSISS {
     top: 20px;
@@ -972,27 +1088,33 @@ body {
   0% {
     transform: translate(60px, -80px);
   }
+
   50% {
     transform: translate(30px, 0px);
   }
+
   100% {
     transform: translate(60px, -80px);
   }
 }
+
 .contactWrapper {
   background-color: #131313;
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
 }
+
 .contactWrapper .labelContact {
   font-size: 2rem;
   font-weight: 600;
 }
+
 .contactWrapper .contactHelp {
   font-style: normal;
   font-weight: 500;
   line-height: 44px;
   color: #7a7a7a;
 }
+
 .contactWrapper .form-control {
   background: #2e2e2e;
   border-radius: 5px !important;
@@ -1027,21 +1149,26 @@ body {
   0% {
     transform: scale(0);
   }
+
   30% {
     transform: scale(0);
   }
+
   100% {
     transform: scale(1);
   }
 }
+
 @keyframes circle-anim {
   from {
     transform: scale(0);
   }
+
   to {
     transform: scale(1.1);
   }
 }
+
 .success::before,
 .success::after {
   content: "";
@@ -1073,14 +1200,17 @@ body {
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   padding-right: 10%;
 }
+
 .footer .footerMsg {
   font-size: 3rem;
   font-weight: 800;
 }
+
 .footer .footerEmail {
   color: #c1c1c1;
   font-weight: 800;
 }
+
 .footer .socialLinks i {
   font-size: 2rem;
   color: white;
@@ -1101,11 +1231,13 @@ body {
   pointer-events: none;
   display: none;
 }
+
 @media (min-width: 992px) {
   .cursor {
     display: block;
   }
 }
+
 .cursor__ball {
   position: absolute;
   top: 0;
@@ -1113,6 +1245,7 @@ body {
   mix-blend-mode: difference;
   z-index: 9999999;
 }
+
 .cursor__ball circle {
   fill: #f7f8fa;
 }
@@ -1141,6 +1274,7 @@ body {
   z-index: -1;
   transition: 0.2s;
 }
+
 .backWork:hover {
   filter: grayscale(0) !important;
 }
@@ -1173,6 +1307,7 @@ body {
 .hideMobile {
   display: none;
 }
+
 @media (min-width: 992px) {
   .hideMobile {
     display: block;
@@ -1182,6 +1317,7 @@ body {
 .hideDesktop {
   display: block;
 }
+
 @media (min-width: 992px) {
   .hideDesktop {
     display: none;
