@@ -6,24 +6,24 @@
     */
 /* COLOR SCHEME --- anthondev.com */
 /* ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~   */
-.profilePicture{
+.profilePicture {
   border-radius: 100%;
   width: 120px;
   margin-bottom: 10px;
 }
-.titleDate{
+.titleDate {
   display: flex;
   gap: 12px;
   justify-items: center;
 }
-.periodDates{
+.periodDates {
   font-size: 1.3rem;
   color: #646363;
 }
-.profilePicture:hover{
-  box-shadow: 0 3px 45px rgba(8, 8, 55, 0.16), 0 3px 6px rgba(0,0,0,0.23);
+.profilePicture:hover {
+  box-shadow: 0 3px 45px rgba(8, 8, 55, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
 }
-.resume{
+.resume {
   margin-top: 10px;
   width: 620px;
   line-height: 32px;
@@ -31,7 +31,7 @@
   font-size: 1.3rem !important;
   font-family: "Onest", sans-serif;
 }
-.highlight{
+.highlight {
   color: #0abb59;
 }
 .h-wrapper {
@@ -47,9 +47,13 @@
   position: absolute;
   top: 0;
   left: 0;
-  background: linear-gradient(119.11deg, #02133ed0 10.18%, rgba(1, 9, 26, 0.96) 90.78%);
+  background: linear-gradient(
+    119.11deg,
+    #02133ed0 10.18%,
+    rgba(1, 9, 26, 0.96) 90.78%
+  );
   /* background: linear-gradient(119.11deg, #022415d0 10.18%, rgba(1, 9, 26, 0.96) 90.78%); */
-  
+
   z-index: 1;
   width: 100%;
   height: 100vh;
@@ -110,7 +114,6 @@
   font-weight: 200;
   font-size: 1.65em;
   letter-spacing: -1px;
-
 }
 
 .vl {
@@ -157,7 +160,7 @@ body {
   float: left;
   height: 300px;
   width: 65px;
-  background: #F5F5F5;
+  background: #f5f5f5;
   overflow-y: scroll;
   margin-bottom: 25px;
 }
@@ -283,11 +286,11 @@ body {
   height: auto;
 }
 
-.next{
+.next {
   width: 1000px;
   height: 200px;
 }
-.next:hover{
+.next:hover {
   color: #058c42;
 }
 .nav .logo a {
@@ -689,7 +692,7 @@ body {
 
 .infoSection .outlinedCircle {
   background-color: transparent;
-  border: 2px solid #0D3292;
+  border: 2px solid #0d3292;
 }
 
 .infoSection .outlinedCircle i {
@@ -868,7 +871,7 @@ body {
   border-radius: 3px;
   background-position: center;
 }
-.positionName{
+.positionName {
   font-size: 1.2rem;
   font-weight: 700;
   color: #b6b6b6;
@@ -877,7 +880,14 @@ body {
   border-radius: 0 5px 5px 0;
   transition: 0.5s;
   cursor: pointer;
-  background-image: linear-gradient(to right bottom, #121212, #161616, #1b1919, #1e1d1c, #21211f);
+  background-image: linear-gradient(
+    to right bottom,
+    #121212,
+    #161616,
+    #1b1919,
+    #1e1d1c,
+    #21211f
+  );
 }
 
 @media (min-width: 992px) {
@@ -899,7 +909,7 @@ body {
   display: inline-block;
   margin: 1px;
   font-weight: 400;
-  font-size: .8rem;
+  font-size: 0.8rem;
   padding: 4px 7px;
 }
 
@@ -951,7 +961,7 @@ body {
   border: 0px solid white;
 }
 @media (max-width: 602px) {
-  .resume{
+  .resume {
     width: 400px;
   }
 }
@@ -962,15 +972,15 @@ body {
 }
 
 .skillsSection .html5:hover {
-  border-color: #EC6231;
+  border-color: #ec6231;
 }
 
 .skillsSection .html5:hover .skillIcon {
-  color: #EC6231;
+  color: #ec6231;
 }
 
 .skillsSection .html5:hover p {
-  color: #EC6231;
+  color: #ec6231;
 }
 
 .skillsSection .css3:hover {
@@ -986,87 +996,87 @@ body {
 }
 
 .skillsSection .js:hover {
-  border-color: #F0DB4F;
+  border-color: #f0db4f;
 }
 
 .skillsSection .js:hover .skillIcon {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 
 .skillsSection .js:hover p {
-  color: #F0DB4F;
+  color: #f0db4f;
 }
 
 .skillsSection .bootstrap:hover {
-  border-color: #553C7B;
+  border-color: #553c7b;
 }
 
 .skillsSection .bootstrap:hover .skillIcon {
-  color: #553C7B;
+  color: #553c7b;
 }
 
 .skillsSection .bootstrap:hover p {
-  color: #553C7B;
+  color: #553c7b;
 }
 
 .skillsSection .react:hover {
-  border-color: #61DBFB;
+  border-color: #61dbfb;
 }
 
 .skillsSection .react:hover .skillIcon {
-  color: #61DBFB;
+  color: #61dbfb;
 }
 
 .skillsSection .react:hover p {
-  color: #61DBFB;
+  color: #61dbfb;
 }
 
 .skillsSection .laravel:hover {
-  border-color: #F05340;
+  border-color: #f05340;
 }
 
 .skillsSection .laravel:hover .skillIcon {
-  color: #F05340;
+  color: #f05340;
 }
 
 .skillsSection .laravel:hover p {
-  color: #F05340;
+  color: #f05340;
 }
 
 .skillsSection .vue:hover {
-  border-color: #41B883;
+  border-color: #41b883;
 }
 
 .skillsSection .vue:hover .skillIcon {
-  color: #41B883;
+  color: #41b883;
 }
 
 .skillsSection .vue:hover p {
-  color: #41B883;
+  color: #41b883;
 }
 
 .skillsSection .nodejs:hover {
-  border-color: #3C873A;
+  border-color: #3c873a;
 }
 
 .skillsSection .nodejs:hover .skillIcon {
-  color: #3C873A;
+  color: #3c873a;
 }
 
 .skillsSection .nodejs:hover p {
-  color: #3C873A;
+  color: #3c873a;
 }
 
 .skillsSection .npm:hover {
-  border-color: #CC3534;
+  border-color: #cc3534;
 }
 
 .skillsSection .npm:hover .skillIcon {
-  color: #CC3534;
+  color: #cc3534;
 }
 
 .skillsSection .npm:hover p {
-  color: #CC3534;
+  color: #cc3534;
 }
 
 .skillsSection .git:hover {
@@ -1116,7 +1126,6 @@ body {
   font-size: 1rem;
 }
 
-
 #bSISS {
   position: absolute;
   top: 250px;
@@ -1155,7 +1164,7 @@ body {
   background-color: rgb(2, 5, 14);
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='4' viewBox='0 0 4 4'%3E%3Cpath fill='%23000000' fill-opacity='0.4' d='M1 3h1v1H1V3zm2-2h1v1H3V1z'%3E%3C/path%3E%3C/svg%3E");
   border-top: 3px solid #0abb59;
-  border-bottom: 3px solid #0D3292;
+  border-bottom: 3px solid #0d3292;
 }
 
 .contactWrapper .labelContact {
@@ -1250,14 +1259,13 @@ body {
 .footer {
   padding-left: 10%;
   font-family: "Onest", sans-serif;
-  
-  background: #091460;
+
+  background: #1b1919;
   padding: 8em 15em;
 }
 .footer p {
   font-size: 1.2rem;
   font-family: "Onest", sans-serif;
-
 }
 .footer .footerMsg {
   font-size: 3rem;
