@@ -8,4 +8,3 @@ Made with Vanilla JS, HTML, CSS3
 
 ---
 
-You can contact me at robwert1997@gmail.com
